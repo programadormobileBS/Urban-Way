@@ -1,0 +1,951 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900" />
+    <title>Urban Way - Home</title>
+    <link rel="icon" type="image/x-icon" href="Images/logosemnome.jpg" />
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body style="scroll-behavior: smooth;">
+    <div class="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden"
+        style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+        <div class="layout-container flex h-full grow flex-col p-2" id="rotas">
+            <header
+                class="fixed top-0 left-0 w-full z-50 0 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#C4C6D3] px-10 py-6  bg-white">
+                <div class="flex items-center gap-1 text-[#121417]">
+                    <div class="size-12">
+                        <img src="Images/logosemnome.jpg" alt="Logo" />
+                    </div>
+                    <h2 class="text-[#5F5F62] text-3xl font-bold leading-tight tracking-[-0.015em]">rban Way</h2>
+                </div>
+                <div class="flex flex-1 justify-end gap-3">
+
+                    <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-[#D3D4DE] text-[#121417] 
+                        gap-0 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-3 py-3"
+                        id="btnEmergencia2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/312/312276.png" style="opacity: 0.6;"
+                            class="w-12 h-12"></button>
+                    <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-[#D3D4DE] text-[#121417] 
+                        gap-0 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-3 py-3">
+                        <img src="https://img.icons8.com/?size=48&id=IEI56YnYhvmJ&format=png" style="opacity: 0.6;"
+                            class="w-12 h-12"></button>
+                    <button
+                        class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg
+                        bg-[#D3D4DE] text-[#121417] gap-0 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-3">
+                        <img src="https://cate.prefeitura.sp.gov.br/wp-content/uploads/2019/12/Libras-v2.png"
+                            style="opacity: 0.7;" alt="Ícone Libras" class="w-12 h-12" />
+                    </button>
+                </div>
+            </header>
+        </div>
+        <div class="px-40 flex flex-1 justify-center py-20">
+            <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+
+                <div class="p-5 mt-4 bg-[#E1E3EC] "
+                    style="position: fixed; z-index: 50; border-radius: 8px; box-shadow: 0px 0px 25px #b1b1b1; margin: 60px -70px;">
+                    <div id="menufix" class="flex border-b border-[#d6dae0] px-4 gap-10">
+                        <a class="tab-btn flex flex-col items-center justify-center border-b-[3px] border-b-transparent  text-[#636e83] "
+                            href="#rotas">
+                            <p class="text-3xl font-bold leading-normal tracking-[0.015em] p-2">Rotas de ônibus</p>
+                        </a>
+                        <a class="tab-btn flex flex-col items-center justify-center border-b-[3px] border-b-transparent  text-[#636e83] "
+                            href="#lugares">
+                            <p class="text-3xl font-bold leading-normal tracking-[0.015em] p-2">Lugares acessíveis</p>
+                        </a>
+                        <a class="tab-btn flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#636e83] "
+                            href="#avaliacao">
+                            <p class="text-3xl font-bold leading-normal tracking-[0.015em] p-2">Avaliações</p>
+                        </a>
+                        <a class="tab-btn flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#636e83] "
+                            href="#vagas">
+                            <p class="text-3xl font-bold leading-normal tracking-[0.015em] p-2">Vagas de emprego</p>
+                        </a>
+                        <a class="tab-btn flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#636e83] "
+                            href="#noticias">
+                            <p class="text-3xl font-bold leading-normal tracking-[0.015em] p-2">Notícias</p>
+                        </a>
+                    </div>
+                </div>
+
+                <h2
+                    class="text-[#121417] text-[30px] font-bold leading-tight tracking-[-0.015em] px-4 pb-6 pt-20 mt-32">
+                    Informações de Ônibus em Tempo Real
+                </h2>
+                <div class="px-4 py-4 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+
+                    <div
+                        class="bg-gray-50 border border-[#d6dae0] rounded-lg p-6 shadow-sm flex items-center justify-between h-40">
+                        <div>
+                            <h3 class="text-[#121417] font-semibold text-3xl mb-2">Linha 22</h3>
+                            <p class="text-[#4E5666] text-2xl mb-2">Destino: <strong>Centro da Cidade</strong></p>
+                            <p class="text-[#4E5666] text-2xl">Chegada: <strong>5 minutos</strong></p>
+                        </div>
+
+                        <button onclick="abrirModalRota('Centro', '5 minutos')"
+                            class="bg-[#D0D3E1] text-[#3F444F] text-2xl font-bold rounded-lg px-5 py-10 mr-2">
+                            Ver Rota
+                        </button>
+                    </div>
+
+                    <div
+                        class="bg-gray-50 border border-[#d6dae0] rounded-lg p-6 shadow-sm flex items-center justify-between h-40">
+                        <div>
+                            <h3 class="text-[#121417] font-semibold text-3xl mb-2">Linha 10</h3>
+                            <p class="text-[#4E5666] text-2xl mb-2">Destino: <strong>Bairro das Flores</strong></p>
+                            <p class="text-[#4E5666] text-2xl">Chegada: <strong>8 minutos</strong></p>
+                        </div>
+
+                        <button onclick="abrirModalRota('Bairro das Flores', '8 minutos')"
+                            class="bg-[#D0D3E1] text-[#3F444F] text-2xl font-bold rounded-lg px-5 py-10 mr-2">
+                            Ver Rota
+                        </button>
+                    </div>
+
+                    <div
+                        class="bg-gray-50 border border-[#d6dae0] rounded-lg p-6 shadow-sm flex items-center justify-between h-40">
+                        <div>
+                            <h3 class="text-[#121417] font-semibold text-3xl mb-2">Linha 35</h3>
+                            <p class="text-[#4E5666] text-2xl mb-2">Destino: <strong>Parque Industrial</strong></p>
+                            <p class="text-[#4E5666] text-2xl">Chegada: <strong>12 minutos</strong></p>
+                        </div>
+
+                        <button onclick="abrirModalRota('Parque Industrial', '12 minutos')"
+                            class="bg-[#D0D3E1] text-[#3F444F] text-2xl font-bold rounded-lg px-5 py-10 mr-2">
+                            Ver Rota
+                        </button>
+                    </div>
+
+                    <div
+                        class="bg-gray-50 border border-[#d6dae0] rounded-lg p-6 shadow-sm flex items-center justify-between h-40">
+                        <div>
+                            <h3 class="text-[#121417] font-semibold text-3xl mb-2">Linha 47</h3>
+                            <p class="text-[#4E5666] text-2xl mb-2">Destino: <strong>Jardim Esperança</strong></p>
+                            <p class="text-[#4E5666] text-2xl">Chegada: <strong>3 minutos</strong></p>
+                        </div>
+
+                        <button onclick="abrirModalRota('Jardim Esperança', '3 minutos')"
+                            class="bg-[#D0D3E1] text-[#3F444F] text-2xl font-bold rounded-lg px-5 py-10 mr-2">
+                            Ver Rota
+                        </button>
+                    </div>
+
+                    <div
+                        class="bg-gray-50 border border-[#d6dae0] rounded-lg p-6 shadow-sm flex items-center justify-between h-40">
+                        <div id="lugares">
+                            <h3 class="text-[#121417] font-semibold text-3xl mb-2">Linha 58</h3>
+                            <p class="text-[#4E5666] text-2xl mb-2">Destino: <strong>Vila Nova</strong></p>
+                            <p class="text-[#4E5666] text-2xl">Chegada: <strong>15 minutos</strong></p>
+                        </div>
+
+                        <button onclick="abrirModalRota('Vila Nova', '15 minutos')"
+                            class="bg-[#D0D3E1] text-[#3F444F] text-2xl font-bold rounded-lg px-5 py-10 mr-2">
+                            Ver Rota
+                        </button>
+                    </div>
+
+                    <div
+                        class="bg-gray-50 border border-[#d6dae0] rounded-lg p-6 shadow-sm flex items-center justify-between h-40">
+                        <div>
+                            <h3 class="text-[#121417] font-semibold text-3xl mb-2">Linha 60</h3>
+                            <p class="text-[#4E5666] text-2xl mb-2">Destino: <strong>Terminal Rodoviário</strong></p>
+                            <p class="text-[#4E5666] text-2xl">Chegada: <strong>20 minutos</strong></p>
+                        </div>
+
+                        <button onclick="abrirModalRota('Terminal Rodoviário', '20 minutos')"
+                            class="bg-[#D0D3E1] text-[#3F444F] text-2xl font-bold rounded-lg px-5 py-10 mr-2">
+                            Ver Rota
+                        </button>
+                    </div>
+
+                </div>
+
+                <div id="modalRota"
+                    class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-4 sm:p-6 w-[90%] sm:w-[600px] transform scale-95 opacity-0 transition-all duration-300">
+
+                        <h2 id="rotaTitulo" class="text-2xl sm:text-3xl font-bold text-[#121417] mb-2"></h2>
+                        <p id="rotaTempo" class="text-lg sm:text-xl text-[#4E5666] mb-4">Chegada: </p>
+
+                        <div class="w-full rounded-lg" style="aspect-ratio: 16 / 9;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d14759.164200997468!2d-46.93781113427351!3d-22.361517224279662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!4m5!1s0x94c856649b5a4f75%3A0x1c9aca860e517b0!2sR.%20Carlos%20Aparecido%20Assenco%2C%2032%20-%20Jardim%20Suecia%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-541%2C%20Brasil!3m2!1d-22.3498618!2d-46.914314399999995!5e0!3m2!1spt-BR!2sbr!4v1755296488345!5m2!1spt-BR!2sbr"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            <!-- Exemplo de uma rota que incorporei do maps-->
+                        </div>
+
+                        <div class="mt-6 text-right">
+                            <button onclick="fecharModalRota()"
+                                class="bg-[#D0D3E1] px-[44%] py-4 rounded-lg text-[#121417] text-[22px] hover:bg-[#c3c6d4]">
+                                Fechar
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-16 w-full h-0.5 border-0 bg-gradient-to-r from-[#435d8b] to-[#d6dae0] rounded-full">
+
+                <h2 class="text-[#121417] text-[30px] font-bold leading-tight tracking-[-0.015em] px-4 pb-6 pt-5">
+                    Estabelecimentos acessíveis</h2>
+                <div class="flex gap-10 overflow-x-auto p-4  scrollbar-hide">
+
+                    <div class="flex-shrink-0 w-[30rem]  flex flex-col gap-5 pb-3 cursor-pointer"
+                        onclick="abrirModalestabelecimento('Cafeteria Flor', 'Um café aconchegante com rampas de acesso e banheiros adaptados.')">
+                        <div class="relative w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://cdn.sortiraparis.com/images/80/96972/767405-les-cafes-fleuris-de-paris.jpg");'>
+
+                            <span class="absolute top-2 right-2 bg-white text-white text-xs px-2 py-1 rounded-xl">
+                                <img src="https://png.pngtree.com/png-clipart/20220604/original/pngtree-seal-gold-certificate-png-image_7931463.png"
+                                    width="80">
+                            </span>
+                        </div>
+                        <div>
+                            <p class="text-[#121417] text-2xl font-bold">Cafeteria Flor</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-[30rem]  flex flex-col gap-3 pb-3 cursor-pointer"
+                        onclick="abrirModalestabelecimento('Biblioteca Inclusiva', 'Biblioteca com acesso para cadeirantes e livros em braile.')">
+                        <div class="relative w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://www.sunrisemedical.es/getmedia/0376bba4-6940-41c3-b1b9-72cf03794e53/bibliotecas-accesibles-inclusivas-social.jpg?width=1200&height=627&ext=.jpg");'>
+                            <span class="absolute top-2 right-2 bg-white text-white text-xs px-2 py-1 rounded-xl">
+                                <img src="https://png.pngtree.com/png-clipart/20220604/original/pngtree-seal-gold-certificate-png-image_7931463.png"
+                                    width="80">
+                            </span>
+                        </div>
+                        <div>
+                            <p class="text-[#121417] text-2xl font-bold">Biblioteca Inclusiva</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-[30rem]  flex flex-col gap-3 pb-3 cursor-pointer"
+                        onclick="abrirModalestabelecimento('Centro Comunitário', 'Espaço cultural com acessibilidade total e intérprete de libras.')">
+                        <div class="relative w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://th.bing.com/th/id/R.e9efdf06c7d0e387d109d45aa886421a?rik=6kqadFQ3jhassw&pid=ImgRaw&r=0");'>
+                            <span class="absolute top-2 right-2 bg-white text-white text-xs px-2 py-1 rounded-xl">
+                                <img src="https://png.pngtree.com/png-clipart/20220604/original/pngtree-seal-gold-certificate-png-image_7931463.png"
+                                    width="80">
+                            </span>
+                        </div>
+                        <div>
+                            <p class="text-[#121417] text-2xl font-bold">Centro Comunitário</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-[30rem] flex flex-col gap-3 pb-3 cursor-pointer"
+                        onclick="abrirModalestabelecimento('Restaurante Solar', 'Restaurante com menu em braile e entrada adaptada.')">
+                        <div class="relative w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://confinesturismo.com.mx/image/noticias/Solar-3.jpg");'>
+                            <span class="absolute top-2 right-2 bg-white text-white text-xs px-2 py-1 rounded-xl">
+                                <img src="https://png.pngtree.com/png-clipart/20220604/original/pngtree-seal-gold-certificate-png-image_7931463.png"
+                                    width="80">
+                            </span>
+                        </div>
+                        <div>
+                            <p class="text-[#121417] text-2xl font-bold">Restaurante Solar</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-[30rem]  flex flex-col gap-3 pb-3 cursor-pointer"
+                        onclick="abrirModalestabelecimento('Parque Verde', 'Parque com trilhas adaptadas e playground inclusivo.')">
+                        <div class="relative w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://image.freepik.com/fotos-gratis/parque-verde_1417-1592.jpg");'>
+                            <span class="absolute top-2 right-2 bg-white text-white text-xs px-2 py-1 rounded-xl">
+                                <img src="https://png.pngtree.com/png-clipart/20220604/original/pngtree-seal-gold-certificate-png-image_7931463.png"
+                                    width="80">
+                            </span>
+
+                        </div>
+                        <div>
+                            <p class="text-[#121417] text-2xl font-bold">Parque Verde</p>
+                        </div>
+                        <div id="avaliacao"></div>
+                    </div>
+                </div>
+
+                <div id="modalInfo"
+                    class="fixed inset-0 bg-gray-50 bg-opacity-50 flex items-center justify-center hidden z-50">
+                    <div class="bg-white p-4 rounded-xl max-w-md w-full relative">
+                        <button onclick="fecharModalestabelecimento()"
+                            class="absolute top-2 right-2 text-black bg-[#ccc] px-2.5 rounded-lg text-3xl hover:text-black">&times;</button>
+                        <h3 id="modalTitulo" class="text-4xl font-bold mb-4"></h3>
+                        <p id="modalDescricao" class="text-2xl text-black"></p>
+                    </div>
+                </div>
+
+                <hr class="my-12 w-full h-[1px] border-0 bg-gradient-to-r from-[#d6dae0] to-[#012C77] rounded-full">
+
+                <h2 class="text-[#121417] text-[30px] font-bold leading-tight tracking-[-0.015em] px-4 pb-6 pt-5">
+                    Opiniões do usuário
+                </h2>
+
+                <div class="flex flex-col gap-8 overflow-x-hidden bg-gray-50 p-4">
+                    <div class="flex flex-col gap-3 bg-gray-50">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-16"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCSUjmNbl-Xp3ywQ4X53c-bFY8GArBPDsihsjotyCrlJ3pkr_qypnHLyEt1t0e-kNjHWfC2ByfdFTnScJdHjkR5TzAanIpgSIuvNahBjzomWJxa_9P2y0LJrwjwqT-j2-M2NtQlsrtw53B5_Zycv-3B-OgQiJwIUkbKPYG-2Il-tyU-cUFJSFHVLGWlvl_IEWkHCWkWCyDIw3kZJ_9cmNJ2RqCzXat8eNuNQ04EE9E7yGfNREXnG_UO15MZkdPqj4IxHmyFwoGfg-A");'>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-[#121417] text-3xl font-medium leading-normal">Isabella</p>
+                                <p class="text-[#636e83] text-xl font-normal leading-normal">2 semanas atrás</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-0.5">
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#b9c0ca]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.91-.61L12 2z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-[#121417] text-2xl font-normal leading-normal">
+                            Cafeteria Flor é fantástica! A equipe é incrivelmente atenciosa e o acesso por rampa é
+                            excelente. Recomendo muito!
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col gap-3 bg-gray-50">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-16"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuACYtMvnac6OjImGK4Ngvuq2EIPeZ8UfQ948pkLpnxWXOc7vR_3IBOs15HQvkLC7FLIb8SPQHhgMxCh-ZYMNcnZ4AwL-6pAmw7_nlppFF4MMT2rQJWzl5WKVIGmfXjZHINRpkPOrN4EkC1e0aa6jiV1p_E1EzpA08_8zGtwmAKYoBaVHPY8099okIIymuRMn7_diTggXiCgVNmY8_5u17Z-Kp2n-KKy-ONB14zTPjqYYCiCLDw34R2tvaCev8p7SMElnZ-A1nEgEGE");'>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-[#121417] text-3xl font-medium leading-normal">Lucas</p>
+                                <p class="text-[#636e83] text-xl font-normal leading-normal">1 mês atrás</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-0.5">
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-[#121417] text-2xl font-normal leading-normal">
+                            A Biblioteca Inclusiva tem uma ótima seleção de materiais acessíveis. A equipe é prestativa,
+                            mas o sistema de áudio poderia ser melhorado.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col gap-3 bg-gray-50">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-16"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDUaUOx14C45E_iBEUPXzege_-xDMPe7cJDIQni3pe-w7xFKDfj3BWxMXOn9TjclyPLJ5uIXqr_8xUf5oOotvVE5lqke7gZKri-CBrOzA5e9q3urml2Bjz3kNErb8Mz81q-Zm7z3Fdu-i5AiFvtk-Fk4xft19OXZev6ql-3HbXjcLMHYQ9yOMhvPGaDjBVgERctduXeQqXCSaL3s7HAg5SB6QPmKvk6l9h-EDls3x1mpWh2zk4ImvqgPjrqX0iv-QTLyHwXqK4oZOg");'>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-[#121417] text-3xl font-medium leading-normal">Sophia</p>
+                                <p class="text-[#636e83] text-xl font-normal leading-normal">2 meses atrás</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-0.5">
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#b9c0ca]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.91-.61L12 2z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#b9c0ca]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.91-.61L12 2z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-[#121417] text-2xl font-normal leading-normal">
+                            O Centro Comunitário é um lugar maravilhoso com excelentes recursos de acessibilidade. A
+                            equipe é simpática e solidária.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col gap-3 bg-gray-50">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-16"
+                                style="background-image: url('Images/pct4.jpg');">
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-[#121417] text-3xl font-medium leading-normal">João</p>
+                                <p class="text-[#636e83] text-xl font-normal leading-normal">3 dias atrás</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-0.5">
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#b9c0ca]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.91-.61L12 2z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#b9c0ca]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.91-.61L12 2z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#b9c0ca]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.91-.61L12 2z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-[#121417] text-2xl font-normal leading-normal">
+                            O Parque Urbano é bonito, mas a sinalização para acessibilidade é confusa e a rampa
+                            principal estava danificada. Precisa de melhorias.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col gap-3 bg-gray-50">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-16"
+                                style="background-image: url('Images/pct5.jpg');">
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-[#121417] text-3xl font-medium leading-normal">Ana</p>
+                                <p class="text-[#636e83] text-xl font-normal leading-normal" id="vagas">1 semana atrás
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-0.5">
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <div class="text-[#435d8b]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-[#121417] text-2xl font-normal leading-normal" id="vagas">
+                            O Teatro Municipal oferece uma experiência incrível! Assentos para cadeirantes em ótima
+                            localização e funcionários super preparados para auxiliar.
+                        </p>
+                    </div>
+                </div>
+
+                <hr
+                    class="my-16 w-full h-0.5 border-0 bg-gradient-to-r from-[#d6dae0] via-[#0E2449] to-[#d6dae0] rounded-full">
+
+                <h2 class="text-[#121417] text-[30px] font-bold leading-tight tracking-[-0.015em] px-4 pb-6 pt-5">
+                    Listagem de vagas
+                </h2>
+                <div class="grid grid-cols-[repeat(auto-fit,minmax(30%,1fr))] gap-5 p-4">
+                    <div class="flex flex-1 gap-3 rounded-lg border border-[#AEBACB] bg-gray-50 p-4 items-center transition-transform duration-200 ease-in-out cursor-pointer hover:bg-gray-100 active:scale-95"
+                        onclick="abrirModalVaga('Representante de Atendimento ao Cliente', '3 anos de experiência', 'Mogi Guaçu - SP', 'R$ 2.500,00', 'Buscamos um Representante de Atendimento ao Cliente proativo e empático para se juntar à nossa equipe. O candidato ideal terá 3 anos de experiência, excelente comunicação e habilidades de resolução de problemas, garantindo a satisfação e o suporte dos nossos clientes. Esta vaga é para trabalhar em Mogi Guaçu - SP, com uma remuneração de R$ 2.500,00.')">
+                        <div class="text-[#121417] mx-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="currentColor"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col">
+                            <h2 class="text-[#121417] text-xl font-bold leading-tight">
+                                Representante de Atendimento ao Cliente
+                            </h2>
+                            <p class="text-lg text-gray-800 mt-2">3 anos de experiência</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-1 gap-3 rounded-lg border border-[#AEBACB] bg-gray-50 p-4 items-center transition-transform duration-200 ease-in-out cursor-pointer hover:bg-gray-100 active:scale-95"
+                        onclick="abrirModalVaga('Assistente Administrativo', '3 anos de experiência', 'Mogi Guaçu - SP', 'R$ 2.100,00', 'Procuramos um Assistente Administrativo para dar suporte às operações diárias. O profissional será responsável por gerenciar documentos, agendar compromissos e auxiliar na organização de rotinas. É essencial ter experiência prévia na área e organização. Vaga para atuar em Mogi Guaçu - SP.')">
+                        <div class="text-[#121417] mx-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="currentColor"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M232 64h-40V48a16 16 0 0 0-16-16H80a16 16 0 0 0-16 16v16H24a8 8 0 0 0-8 8v128a8 8 0 0 0 8 8h208a8 8 0 0 0 8-8V72a8 8 0 0 0-8-8Zm-128-8h64v8h-64ZM32 72h192v32H32Zm192 128H32V112h192Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col">
+                            <h2 class="text-[#121417] text-xl font-bold leading-tight">Assistente Administrativo</h2>
+                            <p class="text-lg text-gray-800 mt-2">3 anos de experiência</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-1 gap-3 rounded-lg border border-[#AEBACB] bg-gray-50 p-4 items-center transition-transform duration-200 ease-in-out cursor-pointer hover:bg-gray-100 active:scale-95"
+                        onclick="abrirModalVaga('Especialista em Marketing', '3 anos de experiência', 'Mogi Guaçu - SP', 'R$ 4.500,00', 'Contratamos Especialista em Marketing com visão estratégica para desenvolver e executar campanhas digitais. O profissional terá como foco o aumento do engajamento e a expansão da marca no mercado. Experiência comprovada em SEO, mídias sociais e análise de dados é um diferencial. Vaga para Mogi Guaçu - SP.')">
+                        <div class="text-[#121417] mx-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="currentColor"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M128 24l-104 56v96l104 56 104-56V80Zm0 14.08L218.72 80 128 117.92 37.28 80ZM40 86.4V169.6l88 47.2V133.6l-88-47.2Zm176 0-88 47.2v83.2l88-47.2Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col">
+                            <h2 class="text-[#121417] text-xl font-bold leading-tight">Especialista em Marketing</h2>
+                            <p class="text-lg text-gray-800 mt-2" id="noticias">3 anos de experiência</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-1 gap-3 rounded-lg border border-[#AEBACB] bg-gray-50 p-4 items-center transition-transform duration-200 ease-in-out cursor-pointer hover:bg-gray-100 active:scale-95"
+                        onclick="abrirModalVaga('Engenheiro de Software', '3 anos de experiência', 'Home Office', 'R$ 7.000,00', 'Vaga para Engenheiro de Software Full-Stack para desenvolver soluções inovadoras. O profissional atuará em todas as fases do ciclo de vida do software, desde a concepção até a implementação. Experiência com linguagens como JavaScript e Python é fundamental. Vaga 100% Home Office.')">
+                        <div class="text-[#121417] mx-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="currentColor"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M200 32H56a8 8 0 0 0-8 8v176a8 8 0 0 0 8 8h144a8 8 0 0 0 8-8V40a8 8 0 0 0-8-8Zm-72 152h-24v-24h24Zm0-32h-24V88h24Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col">
+                            <h2 class="text-[#121417] text-xl font-bold leading-tight">Engenheiro de Software</h2>
+                            <p class="text-lg text-gray-800 mt-2">3 anos de experiência</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-1 gap-3 rounded-lg border border-[#AEBACB] bg-gray-50 p-4 items-center transition-transform duration-200 ease-in-out cursor-pointer hover:bg-gray-100 active:scale-95"
+                        onclick="abrirModalVaga('Designer Gráfico', '3 anos de experiência', 'Mogi Guaçu - SP', 'R$ 3.800,00', 'Buscamos um Designer Gráfico criativo e detalhista para colaborar em diversos projetos, desde materiais de marketing até identidades visuais. O profissional deve ser proficiente em softwares de design e ter um portfólio que demonstre sua capacidade. Vaga para a região de Mogi Guaçu - SP.')">
+                        <div class="text-[#121417] mx-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="currentColor"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M216 48H40a8 8 0 0 0-8 8v152a8 8 0 0 0 8 8h176a8 8 0 0 0 8-8V56a8 8 0 0 0-8-8ZM48 64h160v48H48Zm0 64h160v96H48Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col">
+                            <h2 class="text-[#121417] text-xl font-bold leading-tight">Designer Gráfico</h2>
+                            <p class="text-lg text-gray-800 mt-2">3 anos de experiência</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-1 gap-3 rounded-lg border border-[#AEBACB] bg-gray-50 p-4 items-center transition-transform duration-200 ease-in-out cursor-pointer hover:bg-gray-100 active:scale-95"
+                        onclick="abrirModalVaga('Gerente de Recursos Humanos', '5 anos de experiência', 'Mogi Guaçu - SP', 'R$ 6.200,00', 'Procuramos um Gerente de Recursos Humanos experiente para liderar o departamento. O profissional será responsável por recrutar talentos, gerir o desenvolvimento de funcionários e promover um ambiente de trabalho positivo e inclusivo. São necessários 5 anos de experiência e excelentes habilidades de liderança. Vaga para a cidade de Mogi Guaçu - SP.')">
+                        <div class="text-[#121417] mx-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="currentColor"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M128 24a48 48 0 1 0 48 48 48 48 0 0 0-48-48Zm0 80a32 32 0 1 1 32-32 32 32 0 0 1-32 32ZM216 208a16 16 0 0 0-16-16H56a16 16 0 0 0-16 16v8h176Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col">
+                            <h2 class="text-[#121417] text-xl font-bold leading-tight">
+                                Gerente de Recursos Humanos
+                            </h2>
+                            <p class="text-lg text-gray-800 mt-2">5 anos de experiência</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="modalVaga" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+                    <div class="fixed inset-0 bg-black bg-opacity-50"></div>
+                    <div class="bg-white rounded-2xl shadow-xl p-6 w-full max-w-[900px] z-10 animate-pop-in">
+                        <div class="flex justify-between items-start pb-4 border-b border-gray-200">
+                            <h3 id="modalTitle" class="text-3xl font-bold text-[#121417] leading-tight"></h3>
+                            <button id="closeModalBtn"
+                                class="relative top-4 right-4 text-black bg-[#ccc] px-2.5 rounded-lg text-5xl hover:text-black">&times;
+                            </button>
+                        </div>
+                        <div class="mt-6 space-y-3 text-gray-700 text-3xl">
+                            <p id="modalExperience">
+                                <strong class="text-[#223558]">Experiência:</strong>
+                            </p>
+                            <p id="modalLocation">
+                                <strong class="text-[#223558]">Localização:</strong>
+                            </p>
+                            <p id="modalSalary">
+                                <strong class="text-[#223558]">Salário:</strong>
+                            </p>
+                        </div>
+
+                        <div class="mt-6 pt-6 border-t border-gray-200">
+                            <p id="modalDescription" class="text-gray-800 text-3xl leading-relaxed"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr
+                    class="my-16 w-full h-0.5 border-0 bg-gradient-to-r from-[#0E2449] via-[#d6dae0] to-[#0E2449] rounded-full">
+
+                <h2 class="text-[#121417] text-[30px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+                    Atualizações locais</h2>
+                <div class="p-4">
+                    <div class="flex items-stretch justify-between gap-6 rounded-lg bg-[#E3E7F0] p-8 my-8">
+                        <div class="flex flex-col gap-4 flex-[2_2_0px]">
+                            <p class="text-[#121417] text-3xl font-bold leading-tight">Novas Iniciativas de
+                                Acessibilidade Lançadas</p>
+                            <p class="text-2xl text-gray-700 mt-2">Nossa empresa lança novos recursos para tornar
+                                produtos e serviços mais acessíveis a todos os usuários.</p>
+                            <div class="mt-4">
+                                <button
+                                    class="bg-[#435d8b] text-white px-6 py-3 text-2xl rounded-md font-semibold hover:bg-[#344a72] transition-colors duration-200"
+                                    onclick="abrirModalNoticia(
+                    'Novas Iniciativas de Acessibilidade Lançadas',
+                    'https://lh3.googleusercontent.com/aida-public/AB6AXuAvuVc8DomMqv05YvXKbwX3MFiBQ3lFPc2XYQwdpmqxjgIrrX2zo6K5W2LH9y6qko72VnEB_tgCAFJMV9skUm8jPL52JTlJ18PMdJa3nfYpbQNUng-PIYuc_NfBaaw1HlYCwOSrRdVJHrad6AOj39BznybA8bt3YCKehRjBCj1znCcYcB4vJw3M57EXjan03oXqHZGDCMIlOZgA84OoQOYvwWc2GFkCpjw4oq3_DuAVwngWDfb5IF1nDynLC0KQrYK9IJHc5yH_z3Q',
+                    'Em um passo significativo em direção à inclusão, nossa empresa anuncia uma série de novas iniciativas de acessibilidade. A primeira iniciativa é a integração de ferramentas de tradução em Libras diretamente em nosso site e aplicativos, permitindo que a comunidade surda tenha acesso a todas as nossas informações e serviços. Além disso, introduzimos a funcionalidade de comandos de voz avançados, que possibilita a navegação sem o uso de telas ou mouses, atendendo às necessidades de usuários com deficiências motoras. O projeto também inclui uma nova parceria com a Fundação ABCD para audiodescrição de todo o nosso conteúdo visual, garantindo que usuários com deficiência visual possam consumir nossas mídias de forma completa. Acreditamos que a tecnologia deve ser uma ponte para a inclusão, e estas iniciativas são apenas o começo do nosso compromisso contínuo com a acessibilidade universal. Estamos empenhados em criar um ambiente digital onde todos se sintam bem-vindos e possam interagir de forma plena e independente.'
+                )">
+                                    Ler notícia
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvuVc8DomMqv05YvXKbwX3MFiBQ3lFPc2XYQwdpmqxjgIrrX2zo6K5W2LH9y6qko72VnEB_tgCAFJMV9skUm8jPL52JTlJ18PMdJa3nfYpbQNUng-PIYuc_NfBaaw1HlYCwOSrRdVJHrad6AOj39BznybA8bt3YCKehRjBCj1znCcYcB4vJw3M57EXjan03oXqHZGDCMIlOZgA84OoQOYvwWc2GFkCpjw4oq3_DuAVwngWDfb5IF1nDynLC0KQrYK9IJHc5yH_z3Q");'>
+                        </div>
+                    </div>
+
+                    <div class="flex items-stretch justify-between gap-6 rounded-lg bg-[#E3E7F0] p-8 my-4">
+                        <div class="flex flex-col gap-4 flex-[2_2_0px]">
+                            <p class="text-[#121417] text-3xl font-bold leading-tight">
+                                Via Acessível para Cegos Concluída com Piso Tátil
+                            </p>
+                            <p class="text-xl text-gray-700 mt-2">
+                                A nova iniciativa urbana oferece mais segurança e autonomia para pessoas com deficiência
+                                visual.
+                            </p>
+                            <div class="mt-4">
+                                <button
+                                    class="bg-[#435d8b] text-white px-6 py-3 text-2xl rounded-md font-semibold hover:bg-[#344a72] transition-colors duration-200"
+                                    onclick="abrirModalNoticia(
+                    'Via Acessível para Cegos Concluída com Piso Tátil',
+                    'https://summitmobilidade.estadao.com.br/wp-content/uploads/2021/02/719.jpg',
+                    'A cidade celebra a conclusão de sua mais recente obra de infraestrutura: a implantação de um sistema completo de piso tátil em uma das principais vias do centro. O projeto visa garantir a segurança e a autonomia de pessoas com deficiência visual, permitindo que se desloquem de forma independente. O piso tátil, com suas texturas distintas, serve como um mapa guiado pelos pés, indicando o trajeto seguro, a aproximação de obstáculos e a localização de faixas de pedestres. A iniciativa faz parte de um plano maior da prefeitura para tornar o espaço urbano mais inclusivo, e a expectativa é que o modelo seja replicado em outras áreas da cidade. A obra também inclui a instalação de sinalização sonora nos semáforos e a adequação de rampas, reforçando o compromisso com a acessibilidade universal. Representantes da comunidade cega elogiaram a iniciativa, destacando a importância dessas adaptações para a inclusão social e a qualidade de vida.'
+                )">
+                                    Ler notícia
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                            style='background-image: url("https://summitmobilidade.estadao.com.br/wp-content/uploads/2021/02/719.jpg");'>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="modalNoticia" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+                    <div class="fixed inset-0 bg-black bg-opacity-50"></div>
+                    <div id="modalContentNoticia"
+                        class="bg-white rounded-2xl shadow-xl p-6 w-full max-w-[1000px] z-10 relative animate-pop-in">
+                        <button id="closeModalNoticiaBtn"
+                            class="absolute top-8 right-8 text-black bg-[#eee] px-2.5 rounded-lg text-5xl hover:text-black">&times;
+                        </button>
+
+                        <div class="flex flex-col items-center">
+                            <div id="modalImageNoticia" class="w-full h-80 bg-cover bg-center rounded-lg mb-6">
+                            </div>
+                            <h3 id="modalTitleNoticia" class="text-4xl font-bold text-center leading-tight mb-1">
+                            </h3>
+                        </div>
+
+                        <div class="mt-4 pt-8 border-t border-gray-200">
+                            <p id="modalDescriptionNoticia" class="text-gray-800 text-2xl leading-relaxed"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-16 w-full h-0.5 border-0 bg-[#C7C8CA]">
+
+                <h2 class="text-[#121417] text-[30px] font-bold leading-tight tracking-[-0.015em] px-4 pb-12 pt-5">
+                    Recursos de Acessibilidade</h2>
+                <div class="flex justify-stretch w-full">
+                    <div class="flex flex-1 gap-4 px-4 py-3">
+                        <button
+                            class="flex-grow min-w-0 cursor-pointer items-center justify-center overflow-hidden rounded-lg h-16 px-6 bg-[#D6DBEF] text-[#121417] text-2xl font-bold leading-normal tracking-[0.015em]">
+                            <span class="truncate">Tradução em Libras</span>
+                        </button>
+                        <button
+                            class="flex-grow min-w-0 cursor-pointer items-center justify-center overflow-hidden rounded-lg h-16 px-6 bg-[#D6DBEF] text-[#121417] text-2xl font-bold leading-normal tracking-[0.015em]">
+                            <span class="truncate">Comandos de voz</span>
+                        </button>
+                    </div>
+                </div>
+
+                <button id="btnEmergencia"
+                    class="fixed left-0 top-1/2 -translate-y-1/2 bg-red-600 p-3 rounded-r-full shadow-lg hover:bg-red-700 z-50 flex items-center justify-center">
+                    <img src="https://img.icons8.com/?size=96&id=psUrr9RfrHB4&format=png"
+                        class="w-10 h-10 filter invert brightness-0">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalEmergencia" class="modal fixed bg-white shadow-lg rounded-lg p-4 w-[200px] z-50">
+        <h3 class="text-red-600 font-bold text-2xl mb-2">Emergências</h3>
+        <ul class="text-xl space-y-1">
+            <li>Polícia: <strong>190</strong></li>
+            <li>Bombeiros: <strong>193</strong></li>
+            <li>SAMU: <strong>192</strong></li>
+            <li>Defesa Civil: <strong>199</strong></li>
+            <li>Denúncia: <strong>181</strong></li>
+        </ul>
+    </div>
+
+    <script>
+        const btn1 = document.getElementById('btnEmergencia');
+        const btn2 = document.getElementById('btnEmergencia2');
+        const modal = document.getElementById('modalEmergencia');
+        function abrirModal(posicao) {
+            if (posicao === 'meio') {
+                modal.style.left = "5rem";
+                modal.style.top = "50%";
+                modal.style.transform = "translateY(-50%)";
+            } else if (posicao === 'topo') {
+                modal.style.left = "92%";
+                modal.style.top = "100px";
+                modal.style.transform = "translateX(-50%)";
+            }
+            modal.classList.add('show');
+        }
+        btn1.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (modal.classList.contains('show')) {
+                modal.classList.remove('show');
+            } else {
+                abrirModal('meio');
+            }
+        });
+
+        btn2.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (modal.classList.contains('show')) {
+                modal.classList.remove('show');
+            } else {
+                abrirModal('topo');
+            }
+        });
+        document.addEventListener('click', e => {
+            if (!btn1.contains(e.target) && !btn2.contains(e.target) && !modal.contains(e.target)) {
+                modal.classList.remove('show');
+            }
+        });
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') {
+                modal.classList.remove('show');
+            }
+        });
+    </script>
+
+    <script>
+        function abrirModalRota(titulo, tempo) {
+            const modal = document.getElementById('modalRota');
+            const caixa = modal.querySelector('div');
+            document.getElementById('rotaTitulo').innerText = `Destino: ${titulo}`;
+            document.getElementById('rotaTempo').innerText = `Chegada: ${tempo}`;
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                caixa.classList.remove('scale-95', 'opacity-0');
+                caixa.classList.add('scale-100', 'opacity-100');
+            }, 10);
+        }
+        function fecharModalRota() {
+            const modal = document.getElementById('modalRota');
+            const caixa = modal.querySelector('div');
+            caixa.classList.remove('scale-100', 'opacity-100');
+            caixa.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+    </script>
+
+    <script>
+        document.querySelectorAll('#menufix a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <script>
+        function abrirModalestabelecimento(titulo, descricao) {
+            const modal = document.getElementById('modalInfo');
+            document.getElementById('modalTitulo').innerText = titulo;
+            document.getElementById('modalDescricao').innerText = descricao;
+            modal.classList.remove('hidden');
+            void modal.offsetWidth;
+            modal.classList.add('show');
+        }
+        function fecharModalestabelecimento() {
+            const modal = document.getElementById('modalInfo');
+            modal.classList.remove('show');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+    </script>
+
+    <script>
+        function abrirModalVaga(titulo, experiencia, localizacao, salario, descricao) {
+            document.getElementById('modalTitle').innerText = titulo;
+            document.getElementById('modalExperience').innerHTML = `<strong class="text-[#223558]">Experiência:</strong> ${experiencia}`;
+            document.getElementById('modalLocation').innerHTML = `<strong class="text-[#223558]">Localização:</strong> ${localizacao}`;
+            document.getElementById('modalSalary').innerHTML = `<strong class="text-[#223558]">Salário:</strong> ${salario}`;
+            document.getElementById('modalDescription').innerText = descricao;
+            const modal = document.getElementById('modalVaga');
+            modal.classList.remove('hidden');
+        }
+        function fecharModal() {
+            document.getElementById('modalVaga').classList.add('hidden');
+        }
+        document.getElementById('closeModalBtn').addEventListener('click', fecharModal);
+        document.getElementById('modalVaga').addEventListener('click', (e) => {
+            if (e.target.id === 'modalVaga') {
+                fecharModal();
+            }
+        });
+    </script>
+
+    <script>
+        function abrirModalNoticia(titulo, imageUrl, descricao) {
+            document.getElementById('modalTitleNoticia').innerText = titulo;
+            document.getElementById('modalImageNoticia').style.backgroundImage = `url('${imageUrl}')`;
+            document.getElementById('modalDescriptionNoticia').innerText = descricao;
+            const modal = document.getElementById('modalNoticia');
+            const modalContent = document.getElementById('modalContentNoticia');
+            modal.classList.remove('hidden');
+            modalContent.classList.add('animate-pop-in');
+        }
+        function fecharModalNoticia() {
+            const modal = document.getElementById('modalNoticia');
+            const modalContent = document.getElementById('modalContentNoticia');
+            modalContent.classList.remove('animate-pop-in');
+            modal.classList.add('hidden');
+        }
+        document.getElementById('closeModalNoticiaBtn').addEventListener('click', fecharModalNoticia);
+        document.getElementById('modalNoticia').addEventListener('click', (e) => {
+            if (e.target.id === 'modalNoticia') {
+                fecharModalNoticia();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
