@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 </head>
 
+    
 <body style="scroll-behavior: smooth;">
 
     <div class="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden"
@@ -20,7 +21,7 @@
                     <div class="size-12">
                         <img src="Images/logosemnome.jpg" alt="Logo" />
                     </div>
-                    <h2 class="text-[#5F5F62] text-3xl font-bold leading-tight tracking-[-0.015em]">Urban Way</h2>
+                    <h2 class="text-[#5F5F62] text-3xl font-bold leading-tight tracking-[-0.015em]">rban Way</h2>
                 </div>
                 <div class="flex flex-1 justify-end gap-3">
 
@@ -29,7 +30,7 @@
                         id="btnEmergencia2">
                         <img src="https://cdn-icons-png.flaticon.com/512/312/312276.png" style="opacity: 0.6;"
                             class="w-12 h-12"></button>
-                        <button id="botao-voz" class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-[#D3D4DE] text-[#121417] 
+                    <button id="botao-voz" class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-[#D3D4DE] text-[#121417] 
                         gap-0 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-3 py-3">
                         <img src="https://img.icons8.com/?size=48&id=IEI56YnYhvmJ&format=png" style="opacity: 0.6;"
                             class="w-12 h-12"></button>
@@ -79,7 +80,8 @@
                             <p class="text-[#4E5666] text-2xl">Chegada: <strong>10 minutos</strong></p>
                         </div>
 
-                        <button onclick="abrirModalRota('Jardim Novo II', '10 minutos', 'https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d14759.592091382026!2d-46.951429684275!3d-22.35747907432602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0x94c856fc61c3ebb7%3A0xab4951155c186ade!2sR.%20Cons.%20Ant%C3%B4nio%20F.de%20Lima%2C%20139%20-%20Jardim%20Novo%20I%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013847-231!3m2!1d-22.3453709!2d-46.9378056!4m5!1s0x94c8565694b35205%3A0xa8e2b088400e7f36!2sR.%20Francisco%20Alves%20Pereira%20-%20Jardim%20Almira%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013847-040!3m2!1d-22.3554894!2d-46.9357428!4m3!3m2!1d-22.3578925!2d-46.9362907!4m3!3m2!1d-22.362403399999998!2d-46.9430623!4m3!3m2!1d-22.3635174!2d-46.9453618!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755455351192!5m2!1spt-BR!2sbr')"
+                        <button
+                            onclick="abrirModalRota('Jardim Novo II', '10 minutos', 'https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d14759.592091382026!2d-46.951429684275!3d-22.35747907432602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0x94c856fc61c3ebb7%3A0xab4951155c186ade!2sR.%20Cons.%20Ant%C3%B4nio%20F.de%20Lima%2C%20139%20-%20Jardim%20Novo%20I%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013847-231!3m2!1d-22.3453709!2d-46.9378056!4m5!1s0x94c8565694b35205%3A0xa8e2b088400e7f36!2sR.%20Francisco%20Alves%20Pereira%20-%20Jardim%20Almira%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013847-040!3m2!1d-22.3554894!2d-46.9357428!4m3!3m2!1d-22.3578925!2d-46.9362907!4m3!3m2!1d-22.362403399999998!2d-46.9430623!4m3!3m2!1d-22.3635174!2d-46.9453618!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755455351192!5m2!1spt-BR!2sbr')"
                             class="bg-[#D0D3E1] text-[#3F444F] text-2xl font-bold rounded-lg px-5 py-10 mr-2">
                             Ver Rota
                         </button>
@@ -89,11 +91,12 @@
                         class="bg-gray-50 border border-[#d6dae0] rounded-lg p-6 shadow-sm flex items-center justify-between h-40">
                         <div>
                             <h3 class="text-[#121417] font-semibold text-3xl mb-2">Linha 10</h3>
-                            <p class="text-[#4E5666] text-2xl mb-2">Destino: <strong>Jardim Suecia</strong></p>
+                            <p class="text-[#4E5666] text-2xl mb-2">Destino: <strong>Jardim Suécia</strong></p>
                             <p class="text-[#4E5666] text-2xl">Chegada: <strong>22 minutos</strong></p>
                         </div>
 
-                        <button onclick="abrirModalRota('Jardim Suecia', '22 minutos', 'https://www.google.com/maps/embed?pb=!1m66!1m8!1m3!1d59040.79272903652!2d-46.928238!3d-22.351758!3m2!1i1024!2i768!4f13.1!4m55!3e0!4m5!1s0x94c856649b5a4f75%3A0x1c9aca860e517b0!2sR.%20Carlos%20Aparecido%20Assenco%2C%2032%20-%20Jardim%20Suecia%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-541%2C%20Brasil!3m2!1d-22.3498618!2d-46.914314399999995!4m5!1s0x94c85668bda81dd7%3A0x752b076c1351fe24!2sR.%20Edson%20Candido%20de%20Almeida%20-%20Mogi%20Gua%C3%A7u%2C%20SP%2C%2013848-495!3m2!1d-22.355962299999998!2d-46.9150688!4m5!1s0x94c8566631c9db71%3A0xd5e28a482621b9db!2sR.%20Yvone%20de%20Ara%C3%BAjo%20-%20Mogi%20Gua%C3%A7u%2C%20SP%2C%2013848-389!3m2!1d-22.3556618!2d-46.9193311!4m5!1s0x94c85660508f7a63%3A0x70c20f552f43262d!2sR.%20Oct%C3%A1vio%20Franco%2C%2026%20-%20Jardim%20Boa%20Vista%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-443!3m2!1d-22.3487249!2d-46.9203847!4m5!1s0x94c856609ae02275%3A0x2d7481f5f69c1a25!2sR.%20Luiz%20Saltor%C3%A3o%2C%20440%20-%20Jardim%20Zaniboni%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-355!3m2!1d-22.3505809!2d-46.9220112!4m5!1s0x94c8565e295d5d31%3A0x8af047b95469afad!2sAv.%20V%C3%ADtor%20Bueno%2C%2050%20-%20Jardim%20Zaniboni%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-360!3m2!1d-22.3501439!2d-46.9224531!4m5!1s0x94c856f0d6ff22c9%3A0xe44e9b33a49b76ad!2sRua%20Maria%20Concei%C3%A7%C3%A3o%20Chiarelli%20Silva%2C%20403%20-%20Jardim%20Novo%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-118!3m2!1d-22.344441999999997!2d-46.9287162!4m5!1s0x94c8570482e43b17%3A0xed3e68d3ffc8b713!2sR.%20Atibaia%2C%2020%20-%20Jardim%20Santo%20Antonio%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013847-161!3m2!1d-22.3477204!2d-46.9466402!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%2C%20R.%20Luiz%20Martini%2C%20200%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013845-180!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755454720997!5m2!1spt-BR!2sbr')"
+                        <button
+                            onclick="abrirModalRota('Jardim Suécia', '22 minutos', 'https://www.google.com/maps/embed?pb=!1m66!1m8!1m3!1d59040.79272903652!2d-46.928238!3d-22.351758!3m2!1i1024!2i768!4f13.1!4m55!3e0!4m5!1s0x94c856649b5a4f75%3A0x1c9aca860e517b0!2sR.%20Carlos%20Aparecido%20Assenco%2C%2032%20-%20Jardim%20Suecia%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-541%2C%20Brasil!3m2!1d-22.3498618!2d-46.914314399999995!4m5!1s0x94c85668bda81dd7%3A0x752b076c1351fe24!2sR.%20Edson%20Candido%20de%20Almeida%20-%20Mogi%20Gua%C3%A7u%2C%20SP%2C%2013848-495!3m2!1d-22.355962299999998!2d-46.9150688!4m5!1s0x94c8566631c9db71%3A0xd5e28a482621b9db!2sR.%20Yvone%20de%20Ara%C3%BAjo%20-%20Mogi%20Gua%C3%A7u%2C%20SP%2C%2013848-389!3m2!1d-22.3556618!2d-46.9193311!4m5!1s0x94c85660508f7a63%3A0x70c20f552f43262d!2sR.%20Oct%C3%A1vio%20Franco%2C%2026%20-%20Jardim%20Boa%20Vista%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-443!3m2!1d-22.3487249!2d-46.9203847!4m5!1s0x94c856609ae02275%3A0x2d7481f5f69c1a25!2sR.%20Luiz%20Saltor%C3%A3o%2C%20440%20-%20Jardim%20Zaniboni%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-355!3m2!1d-22.3505809!2d-46.9220112!4m5!1s0x94c8565e295d5d31%3A0x8af047b95469afad!2sAv.%20V%C3%ADtor%20Bueno%2C%2050%20-%20Jardim%20Zaniboni%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-360!3m2!1d-22.3501439!2d-46.9224531!4m5!1s0x94c856f0d6ff22c9%3A0xe44e9b33a49b76ad!2sRua%20Maria%20Concei%C3%A7%C3%A3o%20Chiarelli%20Silva%2C%20403%20-%20Jardim%20Novo%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-118!3m2!1d-22.344441999999997!2d-46.9287162!4m5!1s0x94c8570482e43b17%3A0xed3e68d3ffc8b713!2sR.%20Atibaia%2C%2020%20-%20Jardim%20Santo%20Antonio%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013847-161!3m2!1d-22.3477204!2d-46.9466402!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%2C%20R.%20Luiz%20Martini%2C%20200%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013845-180!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755454720997!5m2!1spt-BR!2sbr')"
                             class="bg-[#D0D3E1] text-[#3F444F] text-2xl font-bold rounded-lg px-5 py-10 mr-2">
                             Ver Rota
                         </button>
@@ -107,7 +110,8 @@
                             <p class="text-[#4E5666] text-2xl">Chegada: <strong>24 minutos</strong></p>
                         </div>
 
-                        <button onclick="abrirModalRota('Rota Guaçuano', '24 minutos', 'https://www.google.com/maps/embed?pb=!1m50!1m12!1m3!1d18242.242079969277!2d-46.958315733876255!3d-22.350272288447638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m35!3e0!4m5!1s0x94c850cdfc7c0557%3A0x6d7782d31fe58250!2sR.%20Paulo%20da%20Cunha%20Bueno%20-%20Jardim%20Guacuano%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013846-460!3m2!1d-22.3143073!2d-46.9523887!4m5!1s0x94c85731ea7b49ef%3A0x57332bbf14aa7e0d!2sRua%20Azal%C3%A9ias%2C%20380%20-%20Jardim%20Ipe%20Pinheiro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.324993199999998!2d-46.952407699999995!4m5!1s0x94c8571812088155%3A0x262e0c05e03a8e5e!2sRua%20Tel%C3%AAmaco%20Borba%2C%20118%20-%20Jardim%20Ype%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3381065!2d-46.9504429!4m3!3m2!1d-22.3419876!2d-46.9484907!4m5!1s0x94c8563556403d2f%3A0x17bdc3775c8b7e57!2sRua%20Siqueira%20Campos%2C%2057%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3727038!2d-46.941262699999996!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755456118652!5m2!1spt-BR!2sbr')"
+                        <button
+                            onclick="abrirModalRota('Rota Guaçuano', '24 minutos', 'https://www.google.com/maps/embed?pb=!1m50!1m12!1m3!1d18242.242079969277!2d-46.958315733876255!3d-22.350272288447638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m35!3e0!4m5!1s0x94c850cdfc7c0557%3A0x6d7782d31fe58250!2sR.%20Paulo%20da%20Cunha%20Bueno%20-%20Jardim%20Guacuano%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013846-460!3m2!1d-22.3143073!2d-46.9523887!4m5!1s0x94c85731ea7b49ef%3A0x57332bbf14aa7e0d!2sRua%20Azal%C3%A9ias%2C%20380%20-%20Jardim%20Ipe%20Pinheiro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.324993199999998!2d-46.952407699999995!4m5!1s0x94c8571812088155%3A0x262e0c05e03a8e5e!2sRua%20Tel%C3%AAmaco%20Borba%2C%20118%20-%20Jardim%20Ype%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3381065!2d-46.9504429!4m3!3m2!1d-22.3419876!2d-46.9484907!4m5!1s0x94c8563556403d2f%3A0x17bdc3775c8b7e57!2sRua%20Siqueira%20Campos%2C%2057%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3727038!2d-46.941262699999996!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755456118652!5m2!1spt-BR!2sbr')"
                             class="bg-[#D0D3E1] text-[#3F444F] text-2xl font-bold rounded-lg px-5 py-10 mr-2">
                             Ver Rota
                         </button>
@@ -121,7 +125,8 @@
                             <p class="text-[#4E5666] text-2xl">Chegada: <strong>21 minutos</strong></p>
                         </div>
 
-                        <button onclick="abrirModalRota('Santa Helena', '5 minutos', 'https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d14759.926805959918!2d-46.96088258427614!3d-22.354319774362295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0x94c857107949ffd3%3A0x5b3659a3521fc37d!2sAv.%20Ponta%20Grossa%2C%20280%20-%20Jardim%20Ipe%20II!3m2!1d-22.3455393!2d-46.9517647!4m5!1s0x94c85715d51b0fc3%3A0x49b85d679fb65ba3!2sR.%20Foz%20do%20Igua%C3%A7u%2C%20682%20-%20Jardim%20Ipe%20III!3m2!1d-22.3417483!2d-46.9563464!4m5!1s0x94c85717ba7b6b79%3A0xa2f8b2a198577574!2sRua%20Jandaia%20do%20Sul%2C%20436%20-%20Jardim%20Ipe%20II!3m2!1d-22.3400337!2d-46.953157999999995!4m5!1s0x94c85710b97cf5e9%3A0xd5588dcc7673f47b!2sRua%20Camb%C3%A9%2C%20260%20-%20Jardim%20Ype%20II!3m2!1d-22.3436858!2d-46.9522927!4m5!1s0x94c8571b147cb8cd%3A0xde92a973cf95fdf5!2sAv.%20Bandeirantes%2C%201615%20-%20Jardim%20Ipe%20IV!3m2!1d-22.3447851!2d-46.9478939!4m5!1s0x94c8570608369aeb%3A0xbc4ca1c43f318405!2sRua%20In%C3%A1cio%20Franco%20Alves!3m2!1d-22.352053299999998!2d-46.9507605!4m5!1s0x94c85708f1f38f15%3A0xd9f1e8d25219c239!2sR.%20Botucatu%2C%20297%20-%20Jardim%20Santa%20Helena!3m2!1d-22.3545245!2d-46.9529068!4m5!1s0x94c85707b3c78ae9%3A0x35836348d1d4a1dd!2sR.%20Jos%C3%A9%20C%C3%A2ndido%20Rangel%2C%20782%20-%20Vila%20Pinheiros!3m2!1d-22.354243999999998!2d-46.949743!4m5!1s0x94c857ab8d5169e5%3A0xd947d1c348920936!2sPra%C3%A7a%20Ant%C3%B4nio%20Giovani%20Lanzi%2C%20157%20-%20Vila%20Pinheiros!3m2!1d-22.3589013!2d-46.9454462!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755455797531!5m2!1spt-BR!2sbr')"
+                        <button
+                            onclick="abrirModalRota('Santa Helena', '5 minutos', 'https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d14759.926805959918!2d-46.96088258427614!3d-22.354319774362295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0x94c857107949ffd3%3A0x5b3659a3521fc37d!2sAv.%20Ponta%20Grossa%2C%20280%20-%20Jardim%20Ipe%20II!3m2!1d-22.3455393!2d-46.9517647!4m5!1s0x94c85715d51b0fc3%3A0x49b85d679fb65ba3!2sR.%20Foz%20do%20Igua%C3%A7u%2C%20682%20-%20Jardim%20Ipe%20III!3m2!1d-22.3417483!2d-46.9563464!4m5!1s0x94c85717ba7b6b79%3A0xa2f8b2a198577574!2sRua%20Jandaia%20do%20Sul%2C%20436%20-%20Jardim%20Ipe%20II!3m2!1d-22.3400337!2d-46.953157999999995!4m5!1s0x94c85710b97cf5e9%3A0xd5588dcc7673f47b!2sRua%20Camb%C3%A9%2C%20260%20-%20Jardim%20Ype%20II!3m2!1d-22.3436858!2d-46.9522927!4m5!1s0x94c8571b147cb8cd%3A0xde92a973cf95fdf5!2sAv.%20Bandeirantes%2C%201615%20-%20Jardim%20Ipe%20IV!3m2!1d-22.3447851!2d-46.9478939!4m5!1s0x94c8570608369aeb%3A0xbc4ca1c43f318405!2sRua%20In%C3%A1cio%20Franco%20Alves!3m2!1d-22.352053299999998!2d-46.9507605!4m5!1s0x94c85708f1f38f15%3A0xd9f1e8d25219c239!2sR.%20Botucatu%2C%20297%20-%20Jardim%20Santa%20Helena!3m2!1d-22.3545245!2d-46.9529068!4m5!1s0x94c85707b3c78ae9%3A0x35836348d1d4a1dd!2sR.%20Jos%C3%A9%20C%C3%A2ndido%20Rangel%2C%20782%20-%20Vila%20Pinheiros!3m2!1d-22.354243999999998!2d-46.949743!4m5!1s0x94c857ab8d5169e5%3A0xd947d1c348920936!2sPra%C3%A7a%20Ant%C3%B4nio%20Giovani%20Lanzi%2C%20157%20-%20Vila%20Pinheiros!3m2!1d-22.3589013!2d-46.9454462!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755455797531!5m2!1spt-BR!2sbr')"
                             class="bg-[#D0D3E1] text-[#3F444F] text-2xl font-bold rounded-lg px-5 py-10 mr-2">
                             Ver Rota
                         </button>
@@ -135,7 +140,8 @@
                             <p class="text-[#4E5666] text-2xl">Chegada: <strong>20 minutos</strong></p>
                         </div>
 
-                        <button onclick="abrirModalRota('Jardim Alvorada', '20 minutos', 'https://www.google.com/maps/embed?pb=!1m56!1m12!1m3!1d14758.794525389436!2d-46.94000718427219!3d-22.365005424239612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m41!3e0!4m5!1s0x94c8566d09ea6337%3A0x71b8a5532377e4fa!2sR.%20Oscar%20Candido%20Rodrigues%2C%20190%20-%20Jardim%20Alvorada%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3614562!2d-46.9141621!4m5!1s0x94c856141ca4508d%3A0x4f3b8785d1f4d97!2sR.%20Ant%C3%B4nio%20da%20Silva%20Leme%20-%20Lot.%20Cidade%20Nova%20Mogi%20Guacu%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.36955!2d-46.9178213!4m5!1s0x94c8566a0b6d0edb%3A0xa6ee019673872e41!2sRua%20Paula%20Bueno%2C%202583%20-%20Jardim%20Samira%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3627121!2d-46.9220033!4m3!3m2!1d-22.364564299999998!2d-46.9258442!4m3!3m2!1d-22.3618871!2d-46.924173599999996!4m3!3m2!1d-22.3610758!2d-46.9244164!4m3!3m2!1d-22.361311099999998!2d-46.928300199999995!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755455064235!5m2!1spt-BR!2sbr')"
+                        <button
+                            onclick="abrirModalRota('Jardim Alvorada', '20 minutos', 'https://www.google.com/maps/embed?pb=!1m56!1m12!1m3!1d14758.794525389436!2d-46.94000718427219!3d-22.365005424239612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m41!3e0!4m5!1s0x94c8566d09ea6337%3A0x71b8a5532377e4fa!2sR.%20Oscar%20Candido%20Rodrigues%2C%20190%20-%20Jardim%20Alvorada%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3614562!2d-46.9141621!4m5!1s0x94c856141ca4508d%3A0x4f3b8785d1f4d97!2sR.%20Ant%C3%B4nio%20da%20Silva%20Leme%20-%20Lot.%20Cidade%20Nova%20Mogi%20Guacu%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.36955!2d-46.9178213!4m5!1s0x94c8566a0b6d0edb%3A0xa6ee019673872e41!2sRua%20Paula%20Bueno%2C%202583%20-%20Jardim%20Samira%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3627121!2d-46.9220033!4m3!3m2!1d-22.364564299999998!2d-46.9258442!4m3!3m2!1d-22.3618871!2d-46.924173599999996!4m3!3m2!1d-22.3610758!2d-46.9244164!4m3!3m2!1d-22.361311099999998!2d-46.928300199999995!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755455064235!5m2!1spt-BR!2sbr')"
                             class="bg-[#D0D3E1] text-[#3F444F] text-2xl font-bold rounded-lg px-5 py-10 mr-2">
                             Ver Rota
                         </button>
@@ -149,7 +155,8 @@
                             <p class="text-[#4E5666] text-2xl">Chegada: <strong>16 minutos</strong></p>
                         </div>
 
-                        <button onclick="abrirModalRota('Santa Terezinha', '16 minutos', 'https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d29520.703893942442!2d-46.95605507200408!3d-22.35030634762043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x94c856eb1d841883%3A0x215a6520114685c0!2sR.%20Margarida%20Cavalheri%2C%20149%20-%20Jardim%20Santa%20Terezinha%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-260!3m2!1d-22.331211!2d-46.923888999999996!4m5!1s0x94c856ec1352e4c5%3A0xd1e8aef54648b787!2sRua%20Pedro%20Voltane%2C%20236%20-%20Jardim%20Santa%20Terezinha%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3351033!2d-46.9258911!4m5!1s0x94c856e949015ded%3A0x18ff5e9903b66e14!2sR.%20Honorina%20Franco%20da%20Rocha%20-%20Jardim%20Santa%20Terezinha%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-220!3m2!1d-22.3345919!2d-46.928151299999996!4m5!1s0x94c856f205cd7365%3A0xa3aa94c7de33c3e3!2sAvenida%20Su%C3%A9cia%2C%201210%20-%20Jardim%20Novo%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3396033!2d-46.926632999999995!4m5!1s0x94c8565c4724702b%3A0xcc739948e25539e2!2sAvenida%20Em%C3%ADlia%20Marchi%20Martini%2C%202025%20-%20Ch%C3%A1caras%20Nova%20Odessa%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3545376!2d-46.925543!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755456369822!5m2!1spt-BR!2sbr')"
+                        <button
+                            onclick="abrirModalRota('Santa Terezinha', '16 minutos', 'https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d29520.703893942442!2d-46.95605507200408!3d-22.35030634762043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x94c856eb1d841883%3A0x215a6520114685c0!2sR.%20Margarida%20Cavalheri%2C%20149%20-%20Jardim%20Santa%20Terezinha%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-260!3m2!1d-22.331211!2d-46.923888999999996!4m5!1s0x94c856ec1352e4c5%3A0xd1e8aef54648b787!2sRua%20Pedro%20Voltane%2C%20236%20-%20Jardim%20Santa%20Terezinha%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3351033!2d-46.9258911!4m5!1s0x94c856e949015ded%3A0x18ff5e9903b66e14!2sR.%20Honorina%20Franco%20da%20Rocha%20-%20Jardim%20Santa%20Terezinha%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-220!3m2!1d-22.3345919!2d-46.928151299999996!4m5!1s0x94c856f205cd7365%3A0xa3aa94c7de33c3e3!2sAvenida%20Su%C3%A9cia%2C%201210%20-%20Jardim%20Novo%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3396033!2d-46.926632999999995!4m5!1s0x94c8565c4724702b%3A0xcc739948e25539e2!2sAvenida%20Em%C3%ADlia%20Marchi%20Martini%2C%202025%20-%20Ch%C3%A1caras%20Nova%20Odessa%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3545376!2d-46.925543!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755456369822!5m2!1spt-BR!2sbr')"
                             class="bg-[#D0D3E1] text-[#3F444F] text-2xl font-bold rounded-lg px-5 py-10 mr-2">
                             Ver Rota
                         </button>
@@ -166,9 +173,8 @@
                         <p id="rotaTempo" class="text-lg sm:text-xl text-[#4E5666] mb-4">Chegada: </p>
 
                         <div class="w-full rounded-lg" style="aspect-ratio: 16 / 9;">
-                            <iframe id="rotaMapa"
-                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
+                            <iframe id="rotaMapa" width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                             </iframe>
                             <!-- Exemplo de uma rota que incorporei do maps-->
                         </div>
@@ -270,10 +276,9 @@
                             class="absolute top-2 right-2 text-black bg-[#ccc] px-2.5 rounded-lg text-3xl hover:text-black">&times;</button>
                         <h3 id="modalTitulo" class="text-4xl font-bold mb-4"></h3>
                         <p id="modalDescricao" class="text-2xl text-black"></p><br>
-                         <iframe id="rotaMapaEstabelecimento"
-                                width="100%" height="50%" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
+                        <iframe id="rotaMapaEstabelecimento" width="100%" height="50%" style="border:0;"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
 
@@ -333,7 +338,8 @@
                             </div>
                         </div>
                         <p class="text-[#121417] text-2xl font-normal leading-normal">
-                            Sistema fantástico! Cores e design muito agradáveis. Urban Way pode ser uma grande revolução para as cidades brasileiras.
+                            Sistema fantástico! Cores e design muito agradáveis. Urban Way pode ser uma grande revolução
+                            para as cidades brasileiras.
                         </p>
                     </div>
 
@@ -385,7 +391,9 @@
                             </div>
                         </div>
                         <p class="text-[#121417] text-2xl font-normal leading-normal">
-                            Que acessibilidade! Eu só consigo entender em linguagem de sinal, eu estava perdido sobre as linhas dos transportes públicos, o Urban Way conseguiu me monstrar corretamente a linha até o jardim novo 2, com seu recurso!
+                            Que acessibilidade! Eu só consigo entender em linguagem de sinal, eu estava perdido sobre as
+                            linhas dos transportes públicos, o Urban Way conseguiu me monstrar corretamente a linha até
+                            o jardim novo 2, com seu recurso!
                         </p>
                     </div>
 
@@ -439,7 +447,8 @@
                             </div>
                         </div>
                         <p class="text-[#121417] text-2xl font-normal leading-normal">
-                            Os estabelcimentos realmente são acessíveis para a gente que quer se divertir, mas não sabe para onde ir.
+                            Os estabelcimentos realmente são acessíveis para a gente que quer se divertir, mas não sabe
+                            para onde ir.
                         </p>
                     </div>
 
@@ -494,7 +503,8 @@
                             </div>
                         </div>
                         <p class="text-[#121417] text-2xl font-normal leading-normal">
-                           O sistema Urban Way é muito bom, porém no campano tem pouca sinalização para pessoas cegas. mas o sistema está de parábens!
+                            O sistema Urban Way é muito bom, porém no campano tem pouca sinalização para pessoas cegas.
+                            mas o sistema está de parábens!
                         </p>
                     </div>
 
@@ -547,7 +557,8 @@
                             </div>
                         </div>
                         <p class="text-[#121417] text-2xl font-normal leading-normal" id="vagas">
-                            Com Urban Way, descobri novos lugares em Mogi Guaçu, O Teatro Municipal oferece uma experiência incrível! Assentos para cadeirantes em ótima
+                            Com Urban Way, descobri novos lugares em Mogi Guaçu, O Teatro Municipal oferece uma
+                            experiência incrível! Assentos para cadeirantes em ótima
                             localização e funcionários super preparados para auxiliar.
                         </p>
                     </div>
@@ -561,7 +572,7 @@
                 </h2>
                 <div class="grid grid-cols-[repeat(auto-fit,minmax(30%,1fr))] gap-5 p-4">
                     <div class="flex flex-1 gap-3 rounded-lg border border-[#AEBACB] bg-gray-50 p-4 items-center transition-transform duration-200 ease-in-out cursor-pointer hover:bg-gray-100 active:scale-95"
-                    onclick="abrirModalVaga('Técnico de Manutenção', '3 anos de experiência', 'Mogi Guaçu - SP', 'R$ 2.800,00', 'Executar ajustes e pequenos reparos em sistemas elétricos, hidráulicos, mecânicos e estruturas civis, seguindo procedimentos de segurança e normas técnicas;Realizar inspeções regulares;Garantir a limpeza e organização do ambiente de trabalho;       Realizar teste de funcionamento;')">
+                        onclick="abrirModalVaga('Técnico de Manutenção', '3 anos de experiência', 'Mogi Guaçu - SP', 'R$ 2.800,00', 'Executar ajustes e pequenos reparos em sistemas elétricos, hidráulicos, mecânicos e estruturas civis, seguindo procedimentos de segurança e normas técnicas;Realizar inspeções regulares;Garantir a limpeza e organização do ambiente de trabalho;       Realizar teste de funcionamento;')">
                         <div class="text-[#121417] mx-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="currentColor"
                                 viewBox="0 0 256 256">
@@ -578,7 +589,7 @@
                         </div>
                     </div>
                     <div class="flex flex-1 gap-3 rounded-lg border border-[#AEBACB] bg-gray-50 p-4 items-center transition-transform duration-200 ease-in-out cursor-pointer hover:bg-gray-100 active:scale-95"
-                    onclick="abrirModalVaga('Auxlilar Administrativo', '1,5 anos de experiência', 'Mogi Guaçu - SP', 'R$ 1.780,00', 'O funcionário trabalharará com suporte a produção, expedição e logistica. Efetuar entrega de EPIs e insumos para a parte de caldeiraria.. Emitir romaneio de caminhão, e inpeção de peças. Dar suporte de documentos para a matriz. Vaga para Mogi Guaçu - SP.')">
+                        onclick="abrirModalVaga('Auxlilar Administrativo', '1,5 anos de experiência', 'Mogi Guaçu - SP', 'R$ 1.780,00', 'O funcionário trabalharará com suporte a produção, expedição e logistica. Efetuar entrega de EPIs e insumos para a parte de caldeiraria.. Emitir romaneio de caminhão, e inpeção de peças. Dar suporte de documentos para a matriz. Vaga para Mogi Guaçu - SP.')">
                         <div class="text-[#121417] mx-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="currentColor"
                                 viewBox="0 0 256 256">
@@ -593,7 +604,7 @@
                         </div>
                     </div>
                     <div class="flex flex-1 gap-3 rounded-lg border border-[#AEBACB] bg-gray-50 p-4 items-center transition-transform duration-200 ease-in-out cursor-pointer hover:bg-gray-100 active:scale-95"
-                    onclick="abrirModalVaga('Auxiliar de Cozinha', '6 meses de experiência', 'Mogi-Guaçu-SP', 'R$ 2.000,00', 'Atender as solicitações de nossos clientes com excelência, visando a satisfação do atendimento; Recepcionar clientes e direcionar para área responsável pelo atendimento; Atender clientes com intenção de cancelamento e reverter sua intenção;')">
+                        onclick="abrirModalVaga('Auxiliar de Cozinha', '6 meses de experiência', 'Mogi-Guaçu-SP', 'R$ 2.000,00', 'Atender as solicitações de nossos clientes com excelência, visando a satisfação do atendimento; Recepcionar clientes e direcionar para área responsável pelo atendimento; Atender clientes com intenção de cancelamento e reverter sua intenção;')">
                         <div class="text-[#121417] mx-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="currentColor"
                                 viewBox="0 0 256 256">
@@ -608,7 +619,7 @@
                         </div>
                     </div>
                     <div class="flex flex-1 gap-3 rounded-lg border border-[#AEBACB] bg-gray-50 p-4 items-center transition-transform duration-200 ease-in-out cursor-pointer hover:bg-gray-100 active:scale-95"
-                    onclick="abrirModalVaga('Operador de Caixa', '1 anos de experiência', 'Mogi Guaçu - SP', 'R$ 2.500,00', 'Executar ajustes e pequenos reparos em sistemas elétricos, hidráulicos, mecânicos e estruturas civis, seguindo procedimentos de segurança e normas técnicas; Realizar inspeções regulares; Garantir a limpeza e organização do ambiente de trabalho;          Realizar teste de funcionamento; Cumprir procedimentos de segurança e normas de saúde ocupacional e registrar diariamente as atividades no sistema. Vaga para a região de Mogi Guaçu - SP.')">
+                        onclick="abrirModalVaga('Operador de Caixa', '1 anos de experiência', 'Mogi Guaçu - SP', 'R$ 2.500,00', 'Executar ajustes e pequenos reparos em sistemas elétricos, hidráulicos, mecânicos e estruturas civis, seguindo procedimentos de segurança e normas técnicas; Realizar inspeções regulares; Garantir a limpeza e organização do ambiente de trabalho;          Realizar teste de funcionamento; Cumprir procedimentos de segurança e normas de saúde ocupacional e registrar diariamente as atividades no sistema. Vaga para a região de Mogi Guaçu - SP.')">
                         <div class="text-[#121417] mx-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="currentColor"
                                 viewBox="0 0 256 256">
@@ -623,7 +634,7 @@
                         </div>
                     </div>
                     <div class="flex flex-1 gap-3 rounded-lg border border-[#AEBACB] bg-gray-50 p-4 items-center transition-transform duration-200 ease-in-out cursor-pointer hover:bg-gray-100 active:scale-95"
-                    onclick="abrirModalVaga('Cumim', 'Não necessário experiência', 'Mogi Guaçu - SP', 'R$ 2.200,00', 'Sobre nós: Estamos procurando um Cumim para apoiar os garçons e manter o salão do restaurante em perfeito estado. Principais responsabilidades: · Preparar e organizar o salão. · Auxiliar na entrega de bebidas e alimentos. · Manter o ambiente limpo e organizado durante o serviço. O que esperamos de você: · Experiência prévia é um diferencial. · Boa comunicação e habilidades organizacionais. O que oferecemos: · Salário competitivo e benefícios. · Ambiente de trabalho acolhedor e colaborativo. Vaga para a cidade de Mogi Guaçu - SP.')">
+                        onclick="abrirModalVaga('Cumim', 'Não necessário experiência', 'Mogi Guaçu - SP', 'R$ 2.200,00', 'Sobre nós: Estamos procurando um Cumim para apoiar os garçons e manter o salão do restaurante em perfeito estado. Principais responsabilidades: · Preparar e organizar o salão. · Auxiliar na entrega de bebidas e alimentos. · Manter o ambiente limpo e organizado durante o serviço. O que esperamos de você: · Experiência prévia é um diferencial. · Boa comunicação e habilidades organizacionais. O que oferecemos: · Salário competitivo e benefícios. · Ambiente de trabalho acolhedor e colaborativo. Vaga para a cidade de Mogi Guaçu - SP.')">
                         <div class="text-[#121417] mx-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="currentColor"
                                 viewBox="0 0 256 256">
@@ -691,8 +702,10 @@
                 <div class="p-4">
                     <div class="flex items-stretch justify-between gap-6 rounded-lg bg-[#E3E7F0] p-8 my-8">
                         <div class="flex flex-col gap-4 flex-[2_2_0px]">
-                            <p class="text-[#121417] text-3xl font-bold leading-tight">Guaçuana vai disputar o miss Brasil em novembro na cidade de Curitiba.</p>
-                            <p class="text-2xl text-gray-700 mt-2">Kimberlly já é conhecida nas redes sociais, onde acumulava mais de 33 mil seguidores.</p>
+                            <p class="text-[#121417] text-3xl font-bold leading-tight">Guaçuana vai disputar o miss
+                                Brasil em novembro na cidade de Curitiba.</p>
+                            <p class="text-2xl text-gray-700 mt-2">Kimberlly já é conhecida nas redes sociais, onde
+                                acumulava mais de 33 mil seguidores.</p>
                             <div class="mt-4">
                                 <button
                                     class="bg-[#435d8b] text-white px-6 py-3 text-2xl rounded-md font-semibold hover:bg-[#344a72] transition-colors duration-200"
@@ -713,10 +726,13 @@
                     <div class="flex items-stretch justify-between gap-6 rounded-lg bg-[#E3E7F0] p-8 my-4">
                         <div class="flex flex-col gap-4 flex-[2_2_0px]">
                             <p class="text-[#121417] text-3xl font-bold leading-tight">
-                                Campo do TG: Área de lazer recebe instalações de guias do estacionamento e demarcação de solo da ciclovia.
+                                Campo do TG: Área de lazer recebe instalações de guias do estacionamento e demarcação de
+                                solo da ciclovia.
                             </p>
                             <p class="text-xl text-gray-700 mt-2">
-                                “Com a nova estrutura será possível oferecer para os moradores um espaço público mais adequado e uma área renovada para o lazer e para a prática esportiva. Logo, logo, teremos mais um excelente espaço em Mogi Guaçu”
+                                “Com a nova estrutura será possível oferecer para os moradores um espaço público mais
+                                adequado e uma área renovada para o lazer e para a prática esportiva. Logo, logo,
+                                teremos mais um excelente espaço em Mogi Guaçu”
                             </p>
                             <div class="mt-4">
                                 <button
@@ -763,10 +779,10 @@
                     Recursos de Acessibilidade</h2>
                 <div class="flex justify-stretch w-full">
                     <div class="flex flex-1 gap-4 px-4 py-3">
-                    <button id="botao-voz1"
-                        class="flex-grow min-w-0 cursor-pointer items-center justify-center overflow-hidden rounded-lg h-16 px-6 bg-[#D6DBEF] text-[#121417] text-2xl font-bold leading-normal tracking-[0.015em]">
-                        <span class="truncate">Comandos de voz</span>
-                    </button>
+                        <button id="botao-voz1"
+                            class="flex-grow min-w-0 cursor-pointer items-center justify-center overflow-hidden rounded-lg h-16 px-6 bg-[#D6DBEF] text-[#121417] text-2xl font-bold leading-normal tracking-[0.015em]">
+                            <span class="truncate">Comandos de voz</span>
+                        </button>
                     </div>
                 </div>
 
@@ -791,106 +807,107 @@
     </div>
 
 
-<!-- Botão de Avaliação -->
-<div class="fixed bottom-6 right-6 z-50">
-    <button id="btnAvaliar" 
-      class="px-5 py-3 rounded-2xl bg-[#4f46e5] text-white font-bold shadow-lg hover:bg-[#4338ca] transition">
-      Avaliar sistema
-    </button>
-  </div>
-  
-  <!-- Modal -->
-  <div id="modalAvaliacao" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-    <div class="bg-white rounded-2xl shadow-xl max-w-2xl w-full p-6 transform transition-all scale-95">
-      <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">O que achou do Urban Way?</h2>
-  
-      <!-- Conteúdo: Cards + QR code -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
-        <!-- Cards de avaliação (ocupam 2/3 do espaço em desktop) -->
-        <div class="grid grid-cols-2 gap-4 md:col-span-2">
-          <button data-valor="Ruim"
-            class="card-avaliacao bg-red-200 hover:bg-red-300 text-red-800 font-semibold p-6 rounded-2xl shadow cursor-pointer transition">
-            Ruim
-          </button>
-          <button data-valor="Regular"
-            class="card-avaliacao bg-yellow-200 hover:bg-yellow-300 text-yellow-800 font-semibold p-6 rounded-2xl shadow cursor-pointer transition">
-            Regular
-          </button>
-          <button data-valor="Bom"
-            class="card-avaliacao bg-green-200 hover:bg-green-300 text-green-800 font-semibold p-6 rounded-2xl shadow cursor-pointer transition">
-            Bom
-          </button>
-          <button data-valor="Muito bom"
-            class="card-avaliacao bg-blue-200 hover:bg-blue-300 text-blue-800 font-semibold p-6 rounded-2xl shadow cursor-pointer transition">
-            Muito bom
-          </button>
-        </div>
-  
-        <!-- QR code (ocupando 1/3 do espaço em desktop) -->
-        <div class="flex justify-center items-center">
-          <div class="flex flex-col items-center">
-            <p class="text-gray-700 font-medium mb-2 text-center">Deixe um feedback escrito!</p>
-              <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://www.instagram.com/urbanway.etec/" 
-                   alt="QR Code para feedback" 
-                   class="w-28 h-28 shadow-lg hover:scale-105 transition transform">
-          </div>
-        </div>
-      </div>
-  
-      <!-- Mensagem -->
-      <p id="mensagemAvaliacao" class="text-center mt-6 text-gray-600 font-medium hidden"></p>
-  
-      <!-- Fechar -->
-      <div class="flex justify-center mt-6">
-        <button id="btnFecharModal" 
-          class="px-4 py-2 rounded-xl bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold transition">
-          Fechar
+    <!-- Botão de Avaliação -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button id="btnAvaliar"
+            class="px-5 py-3 rounded-2xl bg-[#4f46e5] text-white font-bold shadow-lg hover:bg-[#4338ca] transition">
+            Avaliar sistema
         </button>
-      </div>
     </div>
-  </div>
 
-  <script>
-    const btnAvaliar = document.getElementById("btnAvaliar");
-    const modal1 = document.getElementById("modalAvaliacao");
-    const btnFechar = document.getElementById("btnFecharModal");
-    const botoes = document.querySelectorAll(".card-avaliacao");
-    const mensagem = document.getElementById("mensagemAvaliacao");
-  
-    // Abrir modal
-    btnAvaliar.addEventListener("click", () => {
-      modal1.classList.remove("hidden");
-      modal1.querySelector("div").classList.add("scale-100");
-    });
-  
-    // Fechar modal
-    btnFechar.addEventListener("click", () => {
-      modal1.classList.add("hidden");
-      mensagem.classList.add("hidden");
-    });
-  
-    // Capturar avaliação
-    botoes.forEach(botao => {
-      botao.addEventListener("click", () => {
-        const valor = botao.getAttribute("data-valor");
-        mensagem.innerText = `Obrigado pela sua avaliação: ${valor}!`;
-        mensagem.classList.remove("hidden");
-      });
-    });
-  </script>
+    <!-- Modal -->
+    <div id="modalAvaliacao"
+        class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-2xl shadow-xl max-w-2xl w-full p-6 transform transition-all scale-95">
+            <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">O que achou do Urban Way?</h2>
+
+            <!-- Conteúdo: Cards + QR code -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+                <!-- Cards de avaliação (ocupam 2/3 do espaço em desktop) -->
+                <div class="grid grid-cols-2 gap-4 md:col-span-2">
+                    <button data-valor="Ruim"
+                        class="card-avaliacao bg-red-200 hover:bg-red-300 text-red-800 font-semibold p-6 rounded-2xl shadow cursor-pointer transition">
+                        Ruim
+                    </button>
+                    <button data-valor="Regular"
+                        class="card-avaliacao bg-yellow-200 hover:bg-yellow-300 text-yellow-800 font-semibold p-6 rounded-2xl shadow cursor-pointer transition">
+                        Regular
+                    </button>
+                    <button data-valor="Bom"
+                        class="card-avaliacao bg-green-200 hover:bg-green-300 text-green-800 font-semibold p-6 rounded-2xl shadow cursor-pointer transition">
+                        Bom
+                    </button>
+                    <button data-valor="Muito bom"
+                        class="card-avaliacao bg-blue-200 hover:bg-blue-300 text-blue-800 font-semibold p-6 rounded-2xl shadow cursor-pointer transition">
+                        Muito bom
+                    </button>
+                </div>
+
+                <!-- QR code (ocupando 1/3 do espaço em desktop) -->
+                <div class="flex justify-center items-center">
+                    <div class="flex flex-col items-center">
+                        <p class="text-gray-700 font-medium mb-2 text-center">Deixe um feedback escrito!</p>
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://www.instagram.com/urbanway.etec/"
+                            alt="QR Code para feedback"
+                            class="w-28 h-28 shadow-lg hover:scale-105 transition transform">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mensagem -->
+            <p id="mensagemAvaliacao" class="text-center mt-6 text-gray-600 font-medium hidden"></p>
+
+            <!-- Fechar -->
+            <div class="flex justify-center mt-6">
+                <button id="btnFecharModal"
+                    class="px-4 py-2 rounded-xl bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold transition">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const btnAvaliar = document.getElementById("btnAvaliar");
+        const modal1 = document.getElementById("modalAvaliacao");
+        const btnFechar = document.getElementById("btnFecharModal");
+        const botoes = document.querySelectorAll(".card-avaliacao");
+        const mensagem = document.getElementById("mensagemAvaliacao");
+
+        // Abrir modal
+        btnAvaliar.addEventListener("click", () => {
+            modal1.classList.remove("hidden");
+            modal1.querySelector("div").classList.add("scale-100");
+        });
+
+        // Fechar modal
+        btnFechar.addEventListener("click", () => {
+            modal1.classList.add("hidden");
+            mensagem.classList.add("hidden");
+        });
+
+        // Capturar avaliação
+        botoes.forEach(botao => {
+            botao.addEventListener("click", () => {
+                const valor = botao.getAttribute("data-valor");
+                mensagem.innerText = `Obrigado pela sua avaliação: ${valor}!`;
+                mensagem.classList.remove("hidden");
+            });
+        });
+    </script>
 
 
-<div vw class="enabled">
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper>
-    <div class="vw-plugin-top-wrapper"></div>
-  </div>
-</div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
 
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-  new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
 
     <script>
@@ -1043,178 +1060,218 @@
         });
     </script>
 
-<script>
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    const synth = window.speechSynthesis;
+    <script>
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        const synth = window.speechSynthesis;
 
-    function falar(texto) {
-        const utterance = new SpeechSynthesisUtterance(texto);
-        utterance.lang = "pt-BR";
-        utterance.rate = 1.5; // velocidade
-        synth.speak(utterance);
-    }
+        function falar(texto) {
+            const utterance = new SpeechSynthesisUtterance(texto);
+            utterance.lang = "pt-BR";
+            utterance.rate = 1.5; // velocidade
+            synth.speak(utterance);
+        }
 
-    if (SpeechRecognition) {
-        const recognition = new SpeechRecognition();
-        recognition.lang = "pt-BR";
-        recognition.continuous = false;
-        recognition.interimResults = false;
+        if (SpeechRecognition) {
+            const recognition = new SpeechRecognition();
+            recognition.lang = "pt-BR";
+            recognition.continuous = false;
+            recognition.interimResults = false;
 
-        const botaoVoz = document.getElementById("botao-voz");
-        const botaoVoz2 = document.getElementById("botao-voz1")
-        const saida = document.getElementById("saida");
-
-
-
-        botaoVoz.addEventListener("click", () => {
-            recognition.start();
-            falar("Estou ouvindo seu comando.");
-        });
-
-        botaoVoz2.addEventListener("click", () => {
-            recognition.start();
-            falar("Estou ouvindo seu comando.");
-        });
+            const botaoVoz = document.getElementById("botao-voz");
+            const botaoVoz2 = document.getElementById("botao-voz1")
+            const saida = document.getElementById("saida");
 
 
-        recognition.onresult = (event) => {
-            const comando = event.results[0][0].transcript.toLowerCase();
-            falar("Você disse: " + comando);
 
-            // === Navegação principal ===
-            if (comando.includes("rotas") || comando.includes("ônibus") || comando.includes("rota")) {
-                document.querySelector("a[href='#rotas']").click();
-                falar("Abrindo seção de rotas de ônibus.");
-                falar("No momento atual, as rotas disponíveis são: Linha 22, Jardim Novo 2; linha 10, Jardim Suecia; Linha 35, Rota Guaçuano, linha 47, Santa Helena; linha 58, Jardim Alvorada; linha 60, Santa Terezinha")
-            } else if (comando.includes("estabelecimentos") || comando.includes("lugares") || comando.includes("lugar")) {
-                document.querySelector("a[href='#lugares']").click();
-                falar("Abrindo estabelecimentos acessíveis.");
-                falar("Lugares: Parque dos Ingás; Buriti Shopping; Tupec; Praça Recanto; Campano;");
-            } else if (comando.includes("vagas") || comando.includes("empregos") || comando.includes("emprego") || comando.includes("vaga")) {
-                document.querySelector("a[href='#vagas']").click();
-                falar("Abrindo vagas de emprego.");
-                falar("Vagas Disponíveis: Técnico de Manutenção; Auxiliar Administrativo; Auxiliar de Cozinha; Operador de Caixa; Cumim; Consultor de vendas");
-            } else if (comando.includes("notícias") || comando.includes("noticia")) {
-                document.querySelector("a[href='#noticias']").click();
-                falar("Abrindo Seções para noticas para notícias.");
-                falar("A notícias são: Guaçuana vai disputar o miss Brasil em novembro na cidade de Curitiba; Campo do TG: Área de lazer recebe instalações de guias do estacionamento e demarcação de solo da ciclovia")
+            botaoVoz.addEventListener("click", () => {
+                recognition.start();
+                falar("Estou ouvindo seu comando.");
+            });
 
-            // === Acessibilidade extra ===
-            } else if (comando.includes("libras")) {
-                document.querySelector("[vw-access-button]").click();
-                falar("Tradução em libras ativada.");
-            } else if (comando.includes("home") || comando.includes("início")) {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-                falar("Voltando para o início da página.");
-            } else if (comando.includes("aumentar fonte")) {
-                document.body.style.fontSize = "larger";
-                falar("Fonte aumentada.");
-            } else if (comando.includes("diminuir fonte")) {
-                document.body.style.fontSize = "smaller";
-                falar("Fonte diminuída.");
+            botaoVoz2.addEventListener("click", () => {
+                recognition.start();
+                falar("Estou ouvindo seu comando.");
+            });
 
-            // === Comandos para rotas específicas ===
-            } else if (comando.includes("linha 22") || comando.includes("jardim novo 2") || comando.includes("jardim novo dois")) {
-                abrirModalRota('Jardim Novo II', '10 minutos', 'https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d14759.592091382026!2d-46.951429684275!3d-22.35747907432602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0x94c856fc61c3ebb7%3A0xab4951155c186ade!2sR.%20Cons.%20Ant%C3%B4nio%20F.de%20Lima%2C%20139%20-%20Jardim%20Novo%20I%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013847-231!3m2!1d-22.3453709!2d-46.9378056!4m5!1s0x94c8565694b35205%3A0xa8e2b088400e7f36!2sR.%20Francisco%20Alves%20Pereira%20-%20Jardim%20Almira%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013847-040!3m2!1d-22.3554894!2d-46.9357428!4m3!3m2!1d-22.3578925!2d-46.9362907!4m3!3m2!1d-22.362403399999998!2d-46.9430623!4m3!3m2!1d-22.3635174!2d-46.9453618!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755455351192!5m2!1spt-BR!2sbr')
-                falar("Abrindo rota da linha 22, Jardim Novo dois.");
-            } else if (comando.includes("linha 10") || comando.includes("Jardim suecia")) {
-                abrirModalRota('Jardim Suecia', '22 minutos', 'https://www.google.com/maps/embed?pb=!1m66!1m8!1m3!1d59040.79272903652!2d-46.928238!3d-22.351758!3m2!1i1024!2i768!4f13.1!4m55!3e0!4m5!1s0x94c856649b5a4f75%3A0x1c9aca860e517b0!2sR.%20Carlos%20Aparecido%20Assenco%2C%2032%20-%20Jardim%20Suecia%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-541%2C%20Brasil!3m2!1d-22.3498618!2d-46.914314399999995!4m5!1s0x94c85668bda81dd7%3A0x752b076c1351fe24!2sR.%20Edson%20Candido%20de%20Almeida%20-%20Mogi%20Gua%C3%A7u%2C%20SP%2C%2013848-495!3m2!1d-22.355962299999998!2d-46.9150688!4m5!1s0x94c8566631c9db71%3A0xd5e28a482621b9db!2sR.%20Yvone%20de%20Ara%C3%BAjo%20-%20Mogi%20Gua%C3%A7u%2C%20SP%2C%2013848-389!3m2!1d-22.3556618!2d-46.9193311!4m5!1s0x94c85660508f7a63%3A0x70c20f552f43262d!2sR.%20Oct%C3%A1vio%20Franco%2C%2026%20-%20Jardim%20Boa%20Vista%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-443!3m2!1d-22.3487249!2d-46.9203847!4m5!1s0x94c856609ae02275%3A0x2d7481f5f69c1a25!2sR.%20Luiz%20Saltor%C3%A3o%2C%20440%20-%20Jardim%20Zaniboni%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-355!3m2!1d-22.3505809!2d-46.9220112!4m5!1s0x94c8565e295d5d31%3A0x8af047b95469afad!2sAv.%20V%C3%ADtor%20Bueno%2C%2050%20-%20Jardim%20Zaniboni%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-360!3m2!1d-22.3501439!2d-46.9224531!4m5!1s0x94c856f0d6ff22c9%3A0xe44e9b33a49b76ad!2sRua%20Maria%20Concei%C3%A7%C3%A3o%20Chiarelli%20Silva%2C%20403%20-%20Jardim%20Novo%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-118!3m2!1d-22.344441999999997!2d-46.9287162!4m5!1s0x94c8570482e43b17%3A0xed3e68d3ffc8b713!2sR.%20Atibaia%2C%2020%20-%20Jardim%20Santo%20Antonio%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013847-161!3m2!1d-22.3477204!2d-46.9466402!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%2C%20R.%20Luiz%20Martini%2C%20200%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013845-180!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755454720997!5m2!1spt-BR!2sbr');
-                falar("Abrindo rota da linha 10, Jardim Suécia.");
-            } else if (comando.includes("linha 35") || comando.includes("Rota Guaçuano")) {
-                abrirModalRota('Rota Guaçuano', '24 minutos', 'https://www.google.com/maps/embed?pb=!1m50!1m12!1m3!1d18242.242079969277!2d-46.958315733876255!3d-22.350272288447638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m35!3e0!4m5!1s0x94c850cdfc7c0557%3A0x6d7782d31fe58250!2sR.%20Paulo%20da%20Cunha%20Bueno%20-%20Jardim%20Guacuano%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013846-460!3m2!1d-22.3143073!2d-46.9523887!4m5!1s0x94c85731ea7b49ef%3A0x57332bbf14aa7e0d!2sRua%20Azal%C3%A9ias%2C%20380%20-%20Jardim%20Ipe%20Pinheiro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.324993199999998!2d-46.952407699999995!4m5!1s0x94c8571812088155%3A0x262e0c05e03a8e5e!2sRua%20Tel%C3%AAmaco%20Borba%2C%20118%20-%20Jardim%20Ype%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3381065!2d-46.9504429!4m3!3m2!1d-22.3419876!2d-46.9484907!4m5!1s0x94c8563556403d2f%3A0x17bdc3775c8b7e57!2sRua%20Siqueira%20Campos%2C%2057%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3727038!2d-46.941262699999996!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755456118652!5m2!1spt-BR!2sbr')
-                falar("Abrindo rota da linha 35, Guaçuano.");
-            } else if (comando.includes("linha 47") || comando.includes("Santa Helena")) {
-                abrirModalRota('Santa Helena', '5 minutos', 'https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d14759.926805959918!2d-46.96088258427614!3d-22.354319774362295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0x94c857107949ffd3%3A0x5b3659a3521fc37d!2sAv.%20Ponta%20Grossa%2C%20280%20-%20Jardim%20Ipe%20II!3m2!1d-22.3455393!2d-46.9517647!4m5!1s0x94c85715d51b0fc3%3A0x49b85d679fb65ba3!2sR.%20Foz%20do%20Igua%C3%A7u%2C%20682%20-%20Jardim%20Ipe%20III!3m2!1d-22.3417483!2d-46.9563464!4m5!1s0x94c85717ba7b6b79%3A0xa2f8b2a198577574!2sRua%20Jandaia%20do%20Sul%2C%20436%20-%20Jardim%20Ipe%20II!3m2!1d-22.3400337!2d-46.953157999999995!4m5!1s0x94c85710b97cf5e9%3A0xd5588dcc7673f47b!2sRua%20Camb%C3%A9%2C%20260%20-%20Jardim%20Ype%20II!3m2!1d-22.3436858!2d-46.9522927!4m5!1s0x94c8571b147cb8cd%3A0xde92a973cf95fdf5!2sAv.%20Bandeirantes%2C%201615%20-%20Jardim%20Ipe%20IV!3m2!1d-22.3447851!2d-46.9478939!4m5!1s0x94c8570608369aeb%3A0xbc4ca1c43f318405!2sRua%20In%C3%A1cio%20Franco%20Alves!3m2!1d-22.352053299999998!2d-46.9507605!4m5!1s0x94c85708f1f38f15%3A0xd9f1e8d25219c239!2sR.%20Botucatu%2C%20297%20-%20Jardim%20Santa%20Helena!3m2!1d-22.3545245!2d-46.9529068!4m5!1s0x94c85707b3c78ae9%3A0x35836348d1d4a1dd!2sR.%20Jos%C3%A9%20C%C3%A2ndido%20Rangel%2C%20782%20-%20Vila%20Pinheiros!3m2!1d-22.354243999999998!2d-46.949743!4m5!1s0x94c857ab8d5169e5%3A0xd947d1c348920936!2sPra%C3%A7a%20Ant%C3%B4nio%20Giovani%20Lanzi%2C%20157%20-%20Vila%20Pinheiros!3m2!1d-22.3589013!2d-46.9454462!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755455797531!5m2!1spt-BR!2sbr')
-                falar("Abrindo rota da linha 47, Santa Helena.");
-            } else if (comando.includes("linha 58") || comando.includes("Jardim alvorada")) {
-                abrirModalRota('Jardim Alvorada', '20 minutos', 'https://www.google.com/maps/embed?pb=!1m56!1m12!1m3!1d14758.794525389436!2d-46.94000718427219!3d-22.365005424239612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m41!3e0!4m5!1s0x94c8566d09ea6337%3A0x71b8a5532377e4fa!2sR.%20Oscar%20Candido%20Rodrigues%2C%20190%20-%20Jardim%20Alvorada%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3614562!2d-46.9141621!4m5!1s0x94c856141ca4508d%3A0x4f3b8785d1f4d97!2sR.%20Ant%C3%B4nio%20da%20Silva%20Leme%20-%20Lot.%20Cidade%20Nova%20Mogi%20Guacu%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.36955!2d-46.9178213!4m5!1s0x94c8566a0b6d0edb%3A0xa6ee019673872e41!2sRua%20Paula%20Bueno%2C%202583%20-%20Jardim%20Samira%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3627121!2d-46.9220033!4m3!3m2!1d-22.364564299999998!2d-46.9258442!4m3!3m2!1d-22.3618871!2d-46.924173599999996!4m3!3m2!1d-22.3610758!2d-46.9244164!4m3!3m2!1d-22.361311099999998!2d-46.928300199999995!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755455064235!5m2!1spt-BR!2sbr')
-                falar("Abrindo rota da linha 58, Jardim Alvorada.");
-            } else if (comando.includes("linha 60") || comando.includes("Santa Terezinha")) {
-                abrirModalRota('Santa Terezinha', '16 minutos', 'https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d29520.703893942442!2d-46.95605507200408!3d-22.35030634762043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x94c856eb1d841883%3A0x215a6520114685c0!2sR.%20Margarida%20Cavalheri%2C%20149%20-%20Jardim%20Santa%20Terezinha%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-260!3m2!1d-22.331211!2d-46.923888999999996!4m5!1s0x94c856ec1352e4c5%3A0xd1e8aef54648b787!2sRua%20Pedro%20Voltane%2C%20236%20-%20Jardim%20Santa%20Terezinha%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3351033!2d-46.9258911!4m5!1s0x94c856e949015ded%3A0x18ff5e9903b66e14!2sR.%20Honorina%20Franco%20da%20Rocha%20-%20Jardim%20Santa%20Terezinha%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-220!3m2!1d-22.3345919!2d-46.928151299999996!4m5!1s0x94c856f205cd7365%3A0xa3aa94c7de33c3e3!2sAvenida%20Su%C3%A9cia%2C%201210%20-%20Jardim%20Novo%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3396033!2d-46.926632999999995!4m5!1s0x94c8565c4724702b%3A0xcc739948e25539e2!2sAvenida%20Em%C3%ADlia%20Marchi%20Martini%2C%202025%20-%20Ch%C3%A1caras%20Nova%20Odessa%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3545376!2d-46.925543!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755456369822!5m2!1spt-BR!2sbr')
-                falar("Abrindo rota da linha 60, Santa Terezinha.");
-            }else if (comando.includes("Fechar Rota")) {
-                fecharModalRota()
-                falar("Rota Fechada")
-            }
 
-            else if(comando.includes("emergências") || comando.includes("emergência") || comando.includes("emergencias") || comando.includes("emergencia")){
-                btn1.click();
-                falar("<Polícia:190;Bombeiros:193;>SAMU:192;Defesa Civil:199Denúncia:181")
-            }
-            //==Comandos de Estabelecimentos
-            else if(comando.includes("Parque dos Ingás") || comando.includes("Parque dos ingas") || comando.includes("parque")){
-                abrirModalestabelecimento('Parque dos Ingás', 'Área de lazer com infraestrutura para eventos culturais, como o tradicional Natal Encantado.','https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7379.050714284342!2d-46.944465675854076!3d-22.37154398449783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20State%20of%20S%C3%A3o%20Paulo!3m2!1d-22.369608!2d-46.9453788!4m5!1s0x94c856357e8eade3%3A0x4fc453ceb81698ab!2sParque%20dos%20Ing%C3%A1s%20-%20R.%20Ver.%20Francisco%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20State%20of%20S%C3%A3o%20Paulo!3m2!1d-22.3728008!2d-46.938960599999994!5e0!3m2!1sen!2sbr!4v1755543350471!5m2!1sen!2sbr')
-                falar("Área de lazer com infraestrutura para eventos culturais, como o tradicional Natal Encantado.")
-            }else if(comando.includes("Buriti Shopping") || comando.includes("buriti") || comando.includes("shop") || comando.includes("shopping")){
-                abrirModalestabelecimento('Buriti Shopping', 'Maior centro de compras da região, com 94 lojas, cinema e praça de alimentação com 18 restaurantes.','https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7379.154671374152!2d-46.95501861083687!3d-22.369582747037473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20State%20of%20S%C3%A3o%20Paulo!3m2!1d-22.369608!2d-46.9453788!4m5!1s0x94c8573f3e562403%3A0x3b84b2a3f206d9ad!2sBuriti%20Shopping%20Mogi%20Gua%C3%A7u%20-%20Rua%20Francisco%20Franco%20de%20Godoy%20Bueno%20-%20Loteamento%20Cidade%20Nova%20Mogi%20Guacu%2C%20Mogi%20Gua%C3%A7u%20-%20State%20of%20S%C3%A3o%20Paulo!3m2!1d-22.368619799999998!2d-46.953252299999996!5e0!3m2!1sen!2sbr!4v1755543912381!5m2!1sen!2sbr')
-                falar("Maior centro de compras da região, com 94 lojas, cinema e praça de alimentação com 18 restaurantes.")
-            }else if(comando.includes("Tupec") || comando.includes("teatro")){
-                abrirModalestabelecimento('Tupec', 'Faz parte do Centro Cultural José Fantinato, importante espaço para apresentações teatrais e eventos artísticos.','https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7379.332369428816!2d-46.946588510837586!3d-22.36622994680822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20State%20of%20S%C3%A3o%20Paulo!3m2!1d-22.369608!2d-46.9453788!4m5!1s0x94c857c39a03c631%3A0x995844fd6ce6c46e!2sTupec%20-%20Avenida%20dos%20Trabalhadores%20-%20Mogi%20Gua%C3%A7u%2C%20State%20of%20S%C3%A3o%20Paulo!3m2!1d-22.3641847!2d-46.937839!5e0!3m2!1sen!2sbr!4v1755546125909!5m2!1sen!2sbr')
-                falar("faz parte do Centro Cultural José Fantinato, importante espaço para apresentações teatrais e eventos artísticos")
-            }else if(comando.includes("Recanto") || comando.includes("Praça Rui Barbosa") || comando.includes("praça") || comando.includes("praca")){
-                abrirModalestabelecimento('Praça Rui Barbosa', 'Marco histórico e ponto central do comércio tradicional da cidade, próximo à igreja matriz.','https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3102.5246671663726!2d-46.944921524015655!3d-22.370825157577745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20State%20of%20S%C3%A3o%20Paulo!3m2!1d-22.369608!2d-46.9453788!4m5!1s0x94c857b53a599803%3A0x29f92be0aa58ab95!2sPra%C3%A7a%20Rui%20Barbosa%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013845-180!3m2!1d-22.3718087!2d-46.9423854!5e0!3m2!1sen!2sbr!4v1755546314439!5m2!1sen!2sbr')
-                falar("marco histórico e ponto central do comércio tradicional da cidade, próximo à igreja matriz")
-            }else if(comando.includes("Campano") || comando.includes("Centro Esportivo") || comando.includes("centro") || comando.includes("esportivo")){
-                abrirModalestabelecimento('Centro Esportivo Antonio Campano', 'Centro Esportivo Inclusivo e totalmente público.','https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d17550.67050023918!2d-46.948162902338375!3d-22.369709471885567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20State%20of%20S%C3%A3o%20Paulo!3m2!1d-22.369608!2d-46.9453788!4m5!1s0x94c856490829a935%3A0x6cffb6b8524e1fd6!2sCentro%20Esportivo%20Antonio%20Campano!3m2!1d-22.3683867!2d-46.9351491!5e0!3m2!1sen!2sbr!4v1755546816964!5m2!1sen!2sbr')
-                falar("Centro Esportivo Inclusivo e totalmente público")
-            }else if(comando.includes("Fechar Estabelecimento")){
-                fecharModalestabelecimento()
-            }
+            recognition.onresult = (event) => {
+                const comando = event.results[0][0].transcript.toLowerCase();
+                falar("Você disse: " + comando);
 
-            //==Comandos de Vaga
-            else if(comando.includes("Técnico de Manutenção")){
-                abrirModalVaga('Técnico de Manutenção', '3 anos de experiência', 'Mogi Guaçu - SP', 'R$ 2.800,00', 'Executar ajustes e pequenos reparos em sistemas elétricos, hidráulicos, mecânicos e estruturas civis, seguindo procedimentos de segurança e normas técnicas;Realizar inspeções regulares;Garantir a limpeza e organização do ambiente de trabalho;       Realizar teste de funcionamento;')
-                falar("Executar ajustes e pequenos reparos em sistemas elétricos, hidráulicos, mecânicos e estruturas civis, seguindo procedimentos de segurança e normas técnicas;Realizar inspeções regulares;Garantir a limpeza e organização do ambiente de trabalho; Realizar teste de funcionamento;")
-            }else if(comando.includes("Auxiliar Administrativo")){
-                abrirModalVaga('Auxlilar Administrativo', '1,5 anos de experiência', 'Mogi Guaçu - SP', 'R$ 1.780,00', 'O funcionário trabalharará com suporte a produção, expedição e logistica. Efetuar entrega de EPIs e insumos para a parte de caldeiraria.. Emitir romaneio de caminhão, e inpeção de peças. Dar suporte de documentos para a matriz. Vaga para Mogi Guaçu - SP.')
-                falar(" funcionário trabalharará com suporte a produção, expedição e logistica. Efetuar entrega de EPIs e insumos para a parte de caldeiraria.. Emitir romaneio de caminhão, e inpeção de peças. Dar suporte de documentos para a matriz. Vaga para Mogi Guaçu - SP.")
-            }else if(comando.includes("Auxiliar de Cozinha")){
-                abrirModalVaga('Auxiliar de Cozinha', '6 meses de experiência', 'Mogi-Guaçu-SP', 'R$ 2.000,00', 'Atender as solicitações de nossos clientes com excelência, visando a satisfação do atendimento; Recepcionar clientes e direcionar para área responsável pelo atendimento; Atender clientes com intenção de cancelamento e reverter sua intenção;')
-                falar("Atender as solicitações de nossos clientes com excelência, visando a satisfação do atendimento; Recepcionar clientes e direcionar para área responsável pelo atendimento; Atender clientes com intenção de cancelamento e reverter sua intenção;")
-            }else if(comando.includes("Operador de Caixa")){
-                abrirModalVaga('Operador de Caixa', '1 anos de experiência', 'Mogi Guaçu - SP', 'R$ 2.500,00', 'Executar ajustes e pequenos reparos em sistemas elétricos, hidráulicos, mecânicos e estruturas civis, seguindo procedimentos de segurança e normas técnicas; Realizar inspeções regulares; Garantir a limpeza e organização do ambiente de trabalho;          Realizar teste de funcionamento; Cumprir procedimentos de segurança e normas de saúde ocupacional e registrar diariamente as atividades no sistema. Vaga para a região de Mogi Guaçu - SP.')
-                falar("Executar ajustes e pequenos reparos em sistemas elétricos, hidráulicos, mecânicos e estruturas civis, seguindo procedimentos de segurança e normas técnicas; Realizar inspeções regulares; Garantir a limpeza e organização do ambiente de trabalho; Realizar teste de funcionamento; Cumprir procedimentos de segurança e normas de saúde ocupacional e registrar diariamente as atividades no sistema. Vaga para a região de Mogi Guaçu - SP.")
-            }else if(comando.includes("Cumim")){
-                abrirModalVaga('Cumim', 'Não necessário experiência', 'Mogi Guaçu - SP', 'R$ 2.200,00', 'Sobre nós: Estamos procurando um Cumim para apoiar os garçons e manter o salão do restaurante em perfeito estado. Principais responsabilidades: · Preparar e organizar o salão. · Auxiliar na entrega de bebidas e alimentos. · Manter o ambiente limpo e organizado durante o serviço. O que esperamos de você: · Experiência prévia é um diferencial. · Boa comunicação e habilidades organizacionais. O que oferecemos: · Salário competitivo e benefícios. · Ambiente de trabalho acolhedor e colaborativo. Vaga para a cidade de Mogi Guaçu - SP.')
-                falar("Sobre nós: Estamos procurando um Cumim para apoiar os garçons e manter o salão do restaurante em perfeito estado. Principais responsabilidades: · Preparar e organizar o salão. · Auxiliar na entrega de bebidas e alimentos. · Manter o ambiente limpo e organizado durante o serviço. O que esperamos de você: · Experiência prévia é um diferencial. · Boa comunicação e habilidades organizacionais. O que oferecemos: · Salário competitivo e benefícios. · Ambiente de trabalho acolhedor e colaborativo. Vaga para a cidade de Mogi Guaçu- SP")
-            }else if(comando.includes("Consultor de Vendas")){
-                abrirModalVaga('Consultor de Vendas', '2 anos de experiência', 'Mogi Guaçu - SP', 'R$ 2.200,00', 'Realizar vendas de equipamentos de telefonia móvel, acessórios, serviços e planos de telefonia e dados, esclarecendo e orientando o cliente, demonstrando o funcionamento de aparelhos e acessórios quando necessário; recepcionar o cliente e identificar suas necessidades; realizar ligação de ataque à base; solicitar, receber e conferir os documentos do cliente para efetivação da venda; manter a loja organizada; cumprir o padrão de apresentação pessoal; manter-se atualizado no que se refere às informações enviadas via canal do varejo. Vaga para a cidade de Mogi Guaçu - SP.')
-                falar("Realizar vendas de equipamentos de telefonia móvel, acessórios, serviços e planos de telefonia e dados, esclarecendo e orientando o cliente, demonstrando o funcionamento de aparelhos e acessórios quando necessário; recepcionar o cliente e identificar suas necessidades; realizar ligação de ataque à base; solicitar, receber e conferir os documentos do cliente para efetivação da venda; manter a loja organizada; cumprir o padrão de apresentação pessoal; manter-se atualizado no que se refere às informações enviadas via canal do varejo. Vaga para a cidade de Mogi Guaçu - SP")
-            }else if(comando.includes("Fechar Vaga")){
-                fecharModal()
-            }
+                // === Navegação principal ===
+                if (comando.includes("rotas") || comando.includes("ônibus") || comando.includes("rota")) {
+                    document.querySelector("a[href='#rotas']").click();
+                    falar("Abrindo seção de rotas de ônibus.");
+                    falar("No momento atual, as rotas disponíveis são: Linha 22, Jardim Novo 2; linha 10, Jardim Suécia; Linha 35, Rota Guaçuano, linha 47, Santa Helena; linha 58, Jardim Alvorada; linha 60, Santa Terezinha")
+                } else if (comando.includes("estabelecimentos") || comando.includes("lugares") || comando.includes("lugar")) {
+                    document.querySelector("a[href='#lugares']").click();
+                    falar("Abrindo estabelecimentos acessíveis.");
+                    falar("Lugares: Parque dos Ingás; Buriti Shopping; Tupec; Praça Recanto; Campano;");
+                } else if (comando.includes("vagas") || comando.includes("empregos") || comando.includes("emprego") || comando.includes("vaga")) {
+                    document.querySelector("a[href='#vagas']").click();
+                    falar("Abrindo vagas de emprego.");
+                    falar("Vagas Disponíveis: Técnico de Manutenção; Auxiliar Administrativo; Auxiliar de Cozinha; Operador de Caixa; Cumim; Consultor de vendas");
+                } else if (comando.includes("notícias") || comando.includes("noticia")) {
+                    document.querySelector("a[href='#noticias']").click();
+                    falar("Abrindo Seções para noticas para notícias.");
+                    falar("A notícias são: Guaçuana vai disputar o miss Brasil em novembro na cidade de Curitiba; Campo do TG: Área de lazer recebe instalações de guias do estacionamento e demarcação de solo da ciclovia")
 
-            //==Comandos Noticias
-            else if(comando.includes("Guaçuana vai disputar")){
-                abrirModalNoticia(
-                    'Guaçuana vai disputar o miss Brasil em novembro na cidade de Curitiba',
-                    'https://midias.agazeta.com.br/2025/06/27/a-modelo-capixaba-eduarda-braum-2789943-article.webp',
-                    'Perguntada sobre o futuro, Kimberlly respondeu com firmeza e doçura:“Meu sonho é o Miss Internacional e eu vou dar tudo de mim para realizar esse sonho. Quero mostrar que meninas da minha cidade e do interior também podem conquistar o mundo.”Além da faixa e da coroa, a miss ganhou uma viagem de 5 dias para ela e um acompanhante com tudo pago pela organização a conquista representa a realização de uma promessa divina em sua vida. A família chegou a se preparar para a etapa nacional que aconteceria em julho, mas por dificuldades não puderam participar. A nova oportunidade veio como um presente, e para a mãe da miss, isso mostra que “Deus não falha. Ele cumpre suas promessas no tempo certo.” Kimberlly já é conhecida nas redes sociais, onde acumulava mais de 33 mil seguidores no Instagram onde perdeu sua conta por denúncias agora com seu novo Instagram kim_kidsoficial_ ela compartilha sua rotina como modelo, atriz, apresentadora e influenciadora.'
-                )
-                falar('Perguntada sobre o futuro, Kimberlly respondeu com firmeza e doçura:“Meu sonho é o Miss Internacional e eu vou dar tudo de mim para realizar esse sonho. Quero mostrar que meninas da minha cidade e do interior também podem conquistar o mundo.”Além da faixa e da coroa, a miss ganhou uma viagem de 5 dias para ela e um acompanhante com tudo pago pela organização a conquista representa a realização de uma promessa divina em sua vida. A família chegou a se preparar para a etapa nacional que aconteceria em julho, mas por dificuldades não puderam participar. A nova oportunidade veio como um presente, e para a mãe da miss, isso mostra que “Deus não falha. Ele cumpre suas promessas no tempo certo.” Kimberlly já é conhecida nas redes sociais, onde acumulava mais de 33 mil seguidores no Instagram onde perdeu sua conta por denúncias agora com seu novo Instagram kim_kidsoficial_ ela compartilha sua rotina como modelo, atriz, apresentadora e influenciadora.')
-            }else if(comando.includes("Campo do TG")){
-                abrirModalNoticia(
-                    'Campo do TG: Área de lazer recebe instalações de guias do estacionamento e demarcação de solo da ciclovia',
-                    'https://hortonews.com.br/images/noticias/2224/ad6db23295ca68c3972e2527540270a3.jpg',
-                    'Após 15 dias da retomada do serviço de renovação da Praça Francisco Marchese, popularmente conhecida como Campo do TG, no Jardim Nossa Senhora das Graças, o BNH, o espaço já recebeu a instalação de guias das ruas do estacionamento e também a demarcação de solo da futura ciclovia da área de lazer. Além disso, também foi retomada a construção dos banheiros do local. O projeto de requalificação do Campo do TG tem gestão da Secretaria de Planejamento e Desenvolvimento Urbano (SPDU) e o trabalho acompanhamento da Secretaria de Obras e Mobilidade (SOM). A obra é executada pela empresa Guassu Construtora Ltda. Pelo projeto, a Praça Francisco Marchese, ganhará bebedouros, campo de futebol, pista de patinação, espaço pet, playground, campo society, quadra de streetball e bicicletário, além da revitalização da academia ao ar livre já existente. A área terá também iluminação 100% LED e novo paisagismo, além de uma ponte sobre o córrego existente no local. O prefeito Rodrigo Falsetti destacou a importância do investimento, porque o espaço é frequentado por centenas de pessoas para a prática esportiva e para o lazer. “Com a nova estrutura será possível oferecer para os moradores um espaço público mais adequado e uma área renovada para o lazer e para a prática esportiva. Logo, logo, teremos mais um excelente espaço em Mogi Guaçu”, disse.'
-                )
-                falar('Após 15 dias da retomada do serviço de renovação da Praça Francisco Marchese, popularmente conhecida como Campo do TG, no Jardim Nossa Senhora das Graças, o BNH, o espaço já recebeu a instalação de guias das ruas do estacionamento e também a demarcação de solo da futura ciclovia da área de lazer. Além disso, também foi retomada a construção dos banheiros do local. O projeto de requalificação do Campo do TG tem gestão da Secretaria de Planejamento e Desenvolvimento Urbano (SPDU) e o trabalho acompanhamento da Secretaria de Obras e Mobilidade (SOM). A obra é executada pela empresa Guassu Construtora Ltda. Pelo projeto, a Praça Francisco Marchese, ganhará bebedouros, campo de futebol, pista de patinação, espaço pet, playground, campo society, quadra de streetball e bicicletário, além da revitalização da academia ao ar livre já existente. A área terá também iluminação 100% LED e novo paisagismo, além de uma ponte sobre o córrego existente no local. O prefeito Rodrigo Falsetti destacou a importância do investimento, porque o espaço é frequentado por centenas de pessoas para a prática esportiva e para o lazer. “Com a nova estrutura será possível oferecer para os moradores um espaço público mais adequado e uma área renovada para o lazer e para a prática esportiva. Logo, logo, teremos mais um excelente espaço em Mogi Guaçu”, disse.')
-            }else if(comando.includes("Fechar Notícia")){
-                fecharModalNoticia()
-            }
-            else {
-                falar("Desculpe, não entendi o comando.");
-            }
-        };
+                    // === Acessibilidade extra ===
+                } else if (comando.includes("libras") || comando.includes("libra") || comando.includes("tradução")) {
+                    document.querySelector("[vw-access-button]").click();
+                    falar("Tradução em libras ativada.");
 
-        recognition.onerror = (event) => {
-            saida.textContent = "❌ Erro: " + event.error;
-            falar("Ocorreu um erro ao ouvir seu comando.");
-        };
-    } else {
-        alert("Seu navegador não suporta comandos de voz 😢. Use Chrome ou Edge.");
-    }
-</script>
+                } else if (comando.includes("acessibilidade")) {
+                    falar("O aplicativo possui comando de voz e tradução em libras, garantindo uma experiência acessível e prática para todos.");
+                }
+                else if (comando.includes("sobre")) {
+                    falar("O Urban Way é um projeto inovador voltado à melhoria da mobilidade urbana e da inclusão social nas cidades. Ele propõe a instalação de tótens acessíveis em pontos estratégicos, como terminais de ônibus, praças, centros comerciais e áreas de grande circulação. Esses tótens foram pensados para atender todas as pessoas, com atenção especial à acessibilidade para pessoas com deficiência.");
+                }
+                else if (comando.includes("home") || comando.includes("início")) {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                    falar("Voltando para o início da página.");
+                }
+                else if (comando.includes("aumentar fonte")) {
+                    document.body.style.fontSize = "larger";
+                    falar("Fonte aumentada.");
+                }
+                else if (comando.includes("diminuir fonte")) {
+                    document.body.style.fontSize = "smaller";
+                    falar("Fonte diminuída.");
+
+                    // === Comandos para rotas específicas ===
+                } else if (
+                    comando.includes("linha 22") || comando.includes("22") || comando.includes("vinte e dois") ||
+                    comando.includes("jardim novo 2") || comando.includes("jardim novo dois") ||
+                    comando.includes("novo dois") || comando.includes("novo 2") ||
+                    comando.includes("ônibus 22") || comando.includes("busão 22") ||
+                    comando.includes("ônibus jardim novo") || comando.includes("busão jardim novo")
+                ) {
+                    abrirModalRota('Jardim Novo II', '10 minutos', 'https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d14759.592091382026!2d-46.951429684275!3d-22.35747907432602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0x94c856fc61c3ebb7%3A0xab4951155c186ade!2sR.%20Cons.%20Ant%C3%B4nio%20F.de%20Lima%2C%20139%20-%20Jardim%20Novo%20I%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013847-231!3m2!1d-22.3453709!2d-46.9378056!4m5!1s0x94c8565694b35205%3A0xa8e2b088400e7f36!2sR.%20Francisco%20Alves%20Pereira%20-%20Jardim%20Almira%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013847-040!3m2!1d-22.3554894!2d-46.9357428!4m3!3m2!1d-22.3578925!2d-46.9362907!4m3!3m2!1d-22.362403399999998!2d-46.9430623!4m3!3m2!1d-22.3635174!2d-46.9453618!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755455351192!5m2!1spt-BR!2sbr')
+                    falar("Abrindo rota da linha 22, Jardim Novo dois.");
+                } else if (
+                    comando.includes("linha 10") || comando.includes("10") || comando.includes("dez") ||
+                    comando.includes("jardim suecia") || comando.includes("suécia") || comando.includes("suecia") ||
+                    comando.includes("ônibus 10") || comando.includes("busão 10") ||
+                    comando.includes("ônibus suecia") || comando.includes("busão suecia")
+                ) {
+                    abrirModalRota('Jardim Suécia', '22 minutos', 'https://www.google.com/maps/embed?pb=!1m66!1m8!1m3!1d59040.79272903652!2d-46.928238!3d-22.351758!3m2!1i1024!2i768!4f13.1!4m55!3e0!4m5!1s0x94c856649b5a4f75%3A0x1c9aca860e517b0!2sR.%20Carlos%20Aparecido%20Assenco%2C%2032%20-%20Jardim%20Suecia%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-541%2C%20Brasil!3m2!1d-22.3498618!2d-46.914314399999995!4m5!1s0x94c85668bda81dd7%3A0x752b076c1351fe24!2sR.%20Edson%20Candido%20de%20Almeida%20-%20Mogi%20Gua%C3%A7u%2C%20SP%2C%2013848-495!3m2!1d-22.355962299999998!2d-46.9150688!4m5!1s0x94c8566631c9db71%3A0xd5e28a482621b9db!2sR.%20Yvone%20de%20Ara%C3%BAjo%20-%20Mogi%20Gua%C3%A7u%2C%20SP%2C%2013848-389!3m2!1d-22.3556618!2d-46.9193311!4m5!1s0x94c85660508f7a63%3A0x70c20f552f43262d!2sR.%20Oct%C3%A1vio%20Franco%2C%2026%20-%20Jardim%20Boa%20Vista%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-443!3m2!1d-22.3487249!2d-46.9203847!4m5!1s0x94c856609ae02275%3A0x2d7481f5f69c1a25!2sR.%20Luiz%20Saltor%C3%A3o%2C%20440%20-%20Jardim%20Zaniboni%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-355!3m2!1d-22.3505809!2d-46.9220112!4m5!1s0x94c8565e295d5d31%3A0x8af047b95469afad!2sAv.%20V%C3%ADtor%20Bueno%2C%2050%20-%20Jardim%20Zaniboni%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-360!3m2!1d-22.3501439!2d-46.9224531!4m5!1s0x94c856f0d6ff22c9%3A0xe44e9b33a49b76ad!2sRua%20Maria%20Concei%C3%A7%C3%A3o%20Chiarelli%20Silva%2C%20403%20-%20Jardim%20Novo%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-118!3m2!1d-22.344441999999997!2d-46.9287162!4m5!1s0x94c8570482e43b17%3A0xed3e68d3ffc8b713!2sR.%20Atibaia%2C%2020%20-%20Jardim%20Santo%20Antonio%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013847-161!3m2!1d-22.3477204!2d-46.9466402!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%2C%20R.%20Luiz%20Martini%2C%20200%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013845-180!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755454720997!5m2!1spt-BR!2sbr');
+                    falar("Abrindo rota da linha 10, Jardim Suécia.");
+                } else if (
+                    comando.includes("linha 35") || comando.includes("35") || comando.includes("trinta e cinco") ||
+                    comando.includes("rota guaçuano") || comando.includes("guaçuano") || comando.includes("guacuano") ||
+                    comando.includes("ônibus 35") || comando.includes("busão 35") ||
+                    comando.includes("ônibus guaçuano") || comando.includes("busão guaçuano")
+                ) {
+                    abrirModalRota('Rota Guaçuano', '24 minutos', 'https://www.google.com/maps/embed?pb=!1m50!1m12!1m3!1d18242.242079969277!2d-46.958315733876255!3d-22.350272288447638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m35!3e0!4m5!1s0x94c850cdfc7c0557%3A0x6d7782d31fe58250!2sR.%20Paulo%20da%20Cunha%20Bueno%20-%20Jardim%20Guacuano%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013846-460!3m2!1d-22.3143073!2d-46.9523887!4m5!1s0x94c85731ea7b49ef%3A0x57332bbf14aa7e0d!2sRua%20Azal%C3%A9ias%2C%20380%20-%20Jardim%20Ipe%20Pinheiro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.324993199999998!2d-46.952407699999995!4m5!1s0x94c8571812088155%3A0x262e0c05e03a8e5e!2sRua%20Tel%C3%AAmaco%20Borba%2C%20118%20-%20Jardim%20Ype%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3381065!2d-46.9504429!4m3!3m2!1d-22.3419876!2d-46.9484907!4m5!1s0x94c8563556403d2f%3A0x17bdc3775c8b7e57!2sRua%20Siqueira%20Campos%2C%2057%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3727038!2d-46.941262699999996!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755456118652!5m2!1spt-BR!2sbr')
+                    falar("Abrindo rota da linha 35, Guaçuano.");
+                } else if (
+                    comando.includes("linha 47") || comando.includes("47") || comando.includes("quarenta e sete") ||
+                    comando.includes("santa helena") || comando.includes("helena") ||
+                    comando.includes("ônibus 47") || comando.includes("busão 47") ||
+                    comando.includes("ônibus santa helena") || comando.includes("busão santa helena")
+                ) {
+                    abrirModalRota('Santa Helena', '5 minutos', 'https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d14759.926805959918!2d-46.96088258427614!3d-22.354319774362295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0x94c857107949ffd3%3A0x5b3659a3521fc37d!2sAv.%20Ponta%20Grossa%2C%20280%20-%20Jardim%20Ipe%20II!3m2!1d-22.3455393!2d-46.9517647!4m5!1s0x94c85715d51b0fc3%3A0x49b85d679fb65ba3!2sR.%20Foz%20do%20Igua%C3%A7u%2C%20682%20-%20Jardim%20Ipe%20III!3m2!1d-22.3417483!2d-46.9563464!4m5!1s0x94c85717ba7b6b79%3A0xa2f8b2a198577574!2sRua%20Jandaia%20do%20Sul%2C%20436%20-%20Jardim%20Ipe%20II!3m2!1d-22.3400337!2d-46.953157999999995!4m5!1s0x94c85710b97cf5e9%3A0xd5588dcc7673f47b!2sRua%20Camb%C3%A9%2C%20260%20-%20Jardim%20Ype%20II!3m2!1d-22.3436858!2d-46.9522927!4m5!1s0x94c8571b147cb8cd%3A0xde92a973cf95fdf5!2sAv.%20Bandeirantes%2C%201615%20-%20Jardim%20Ipe%20IV!3m2!1d-22.3447851!2d-46.9478939!4m5!1s0x94c8570608369aeb%3A0xbc4ca1c43f318405!2sRua%20In%C3%A1cio%20Franco%20Alves!3m2!1d-22.352053299999998!2d-46.9507605!4m5!1s0x94c85708f1f38f15%3A0xd9f1e8d25219c239!2sR.%20Botucatu%2C%20297%20-%20Jardim%20Santa%20Helena!3m2!1d-22.3545245!2d-46.9529068!4m5!1s0x94c85707b3c78ae9%3A0x35836348d1d4a1dd!2sR.%20Jos%C3%A9%20C%C3%A2ndido%20Rangel%2C%20782%20-%20Vila%20Pinheiros!3m2!1d-22.354243999999998!2d-46.949743!4m5!1s0x94c857ab8d5169e5%3A0xd947d1c348920936!2sPra%C3%A7a%20Ant%C3%B4nio%20Giovani%20Lanzi%2C%20157%20-%20Vila%20Pinheiros!3m2!1d-22.3589013!2d-46.9454462!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755455797531!5m2!1spt-BR!2sbr')
+                    falar("Abrindo rota da linha 47, Santa Helena.");
+                } else if (
+                    comando.includes("linha 58") || comando.includes("58") || comando.includes("cinquenta e oito") ||
+                    comando.includes("jardim alvorada") || comando.includes("alvorada") ||
+                    comando.includes("ônibus 58") || comando.includes("busão 58") ||
+                    comando.includes("ônibus alvorada") || comando.includes("busão alvorada")
+                ) {
+                    abrirModalRota('Jardim Alvorada', '20 minutos', 'https://www.google.com/maps/embed?pb=!1m56!1m12!1m3!1d14758.794525389436!2d-46.94000718427219!3d-22.365005424239612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m41!3e0!4m5!1s0x94c8566d09ea6337%3A0x71b8a5532377e4fa!2sR.%20Oscar%20Candido%20Rodrigues%2C%20190%20-%20Jardim%20Alvorada%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3614562!2d-46.9141621!4m5!1s0x94c856141ca4508d%3A0x4f3b8785d1f4d97!2sR.%20Ant%C3%B4nio%20da%20Silva%20Leme%20-%20Lot.%20Cidade%20Nova%20Mogi%20Guacu%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.36955!2d-46.9178213!4m5!1s0x94c8566a0b6d0edb%3A0xa6ee019673872e41!2sRua%20Paula%20Bueno%2C%202583%20-%20Jardim%20Samira%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3627121!2d-46.9220033!4m3!3m2!1d-22.364564299999998!2d-46.9258442!4m3!3m2!1d-22.3618871!2d-46.924173599999996!4m3!3m2!1d-22.3610758!2d-46.9244164!4m3!3m2!1d-22.361311099999998!2d-46.928300199999995!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755455064235!5m2!1spt-BR!2sbr')
+                    falar("Abrindo rota da linha 58, Jardim Alvorada.");
+                } else if (
+                    comando.includes("linha 60") || comando.includes("60") || comando.includes("sessenta") ||
+                    comando.includes("santa terezinha") || comando.includes("tereza") || comando.includes("teresinha") ||
+                    comando.includes("ônibus 60") || comando.includes("busão 60") ||
+                    comando.includes("ônibus santa terezinha") || comando.includes("busão santa terezinha")
+                ) {
+                    abrirModalRota('Santa Terezinha', '16 minutos', 'https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d29520.703893942442!2d-46.95605507200408!3d-22.35030634762043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x94c856eb1d841883%3A0x215a6520114685c0!2sR.%20Margarida%20Cavalheri%2C%20149%20-%20Jardim%20Santa%20Terezinha%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-260!3m2!1d-22.331211!2d-46.923888999999996!4m5!1s0x94c856ec1352e4c5%3A0xd1e8aef54648b787!2sRua%20Pedro%20Voltane%2C%20236%20-%20Jardim%20Santa%20Terezinha%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3351033!2d-46.9258911!4m5!1s0x94c856e949015ded%3A0x18ff5e9903b66e14!2sR.%20Honorina%20Franco%20da%20Rocha%20-%20Jardim%20Santa%20Terezinha%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013848-220!3m2!1d-22.3345919!2d-46.928151299999996!4m5!1s0x94c856f205cd7365%3A0xa3aa94c7de33c3e3!2sAvenida%20Su%C3%A9cia%2C%201210%20-%20Jardim%20Novo%20II%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3396033!2d-46.926632999999995!4m5!1s0x94c8565c4724702b%3A0xcc739948e25539e2!2sAvenida%20Em%C3%ADlia%20Marchi%20Martini%2C%202025%20-%20Ch%C3%A1caras%20Nova%20Odessa%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.3545376!2d-46.925543!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP!3m2!1d-22.369608!2d-46.9453788!5e0!3m2!1spt-BR!2sbr!4v1755456369822!5m2!1spt-BR!2sbr')
+                    falar("Abrindo rota da linha 60, Santa Terezinha.");
+                } else if (comando.includes("Fechar Rota")) {
+                    fecharModalRota()
+                    falar("Rota Fechada")
+                }
+
+                else if (comando.includes("emergências") || comando.includes("emergência") || comando.includes("emergencias") || comando.includes("emergencia")) {
+                    btn1.click();
+                    falar("<Polícia:190;Bombeiros:193;>SAMU:192;Defesa Civil:199Denúncia:181")
+                }
+                //==Comandos de Estabelecimentos
+                else if (comando.includes("Parque dos Ingás") || comando.includes("Parque dos ingas") || comando.includes("parque")) {
+                    abrirModalestabelecimento('Parque dos Ingás', 'Área de lazer com infraestrutura para eventos culturais, como o tradicional Natal Encantado.', 'https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7379.050714284342!2d-46.944465675854076!3d-22.37154398449783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20State%20of%20S%C3%A3o%20Paulo!3m2!1d-22.369608!2d-46.9453788!4m5!1s0x94c856357e8eade3%3A0x4fc453ceb81698ab!2sParque%20dos%20Ing%C3%A1s%20-%20R.%20Ver.%20Francisco%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20State%20of%20S%C3%A3o%20Paulo!3m2!1d-22.3728008!2d-46.938960599999994!5e0!3m2!1sen!2sbr!4v1755543350471!5m2!1sen!2sbr')
+                    falar("Área de lazer com infraestrutura para eventos culturais, como o tradicional Natal Encantado.")
+                } else if (comando.includes("Buriti Shopping") || comando.includes("buriti") || comando.includes("shop") || comando.includes("shopping")) {
+                    abrirModalestabelecimento('Buriti Shopping', 'Maior centro de compras da região, com 94 lojas, cinema e praça de alimentação com 18 restaurantes.', 'https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7379.154671374152!2d-46.95501861083687!3d-22.369582747037473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20State%20of%20S%C3%A3o%20Paulo!3m2!1d-22.369608!2d-46.9453788!4m5!1s0x94c8573f3e562403%3A0x3b84b2a3f206d9ad!2sBuriti%20Shopping%20Mogi%20Gua%C3%A7u%20-%20Rua%20Francisco%20Franco%20de%20Godoy%20Bueno%20-%20Loteamento%20Cidade%20Nova%20Mogi%20Guacu%2C%20Mogi%20Gua%C3%A7u%20-%20State%20of%20S%C3%A3o%20Paulo!3m2!1d-22.368619799999998!2d-46.953252299999996!5e0!3m2!1sen!2sbr!4v1755543912381!5m2!1sen!2sbr')
+                    falar("Maior centro de compras da região, com 94 lojas, cinema e praça de alimentação com 18 restaurantes.")
+                } else if (comando.includes("Tupec") || comando.includes("teatro")) {
+                    abrirModalestabelecimento('Tupec', 'Faz parte do Centro Cultural José Fantinato, importante espaço para apresentações teatrais e eventos artísticos.', 'https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7379.332369428816!2d-46.946588510837586!3d-22.36622994680822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20State%20of%20S%C3%A3o%20Paulo!3m2!1d-22.369608!2d-46.9453788!4m5!1s0x94c857c39a03c631%3A0x995844fd6ce6c46e!2sTupec%20-%20Avenida%20dos%20Trabalhadores%20-%20Mogi%20Gua%C3%A7u%2C%20State%20of%20S%C3%A3o%20Paulo!3m2!1d-22.3641847!2d-46.937839!5e0!3m2!1sen!2sbr!4v1755546125909!5m2!1sen!2sbr')
+                    falar("faz parte do Centro Cultural José Fantinato, importante espaço para apresentações teatrais e eventos artísticos")
+                } else if (comando.includes("Recanto") || comando.includes("Praça Rui Barbosa") || comando.includes("praça") || comando.includes("praca")) {
+                    abrirModalestabelecimento('Praça Rui Barbosa', 'Marco histórico e ponto central do comércio tradicional da cidade, próximo à igreja matriz.', 'https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3102.5246671663726!2d-46.944921524015655!3d-22.370825157577745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20State%20of%20S%C3%A3o%20Paulo!3m2!1d-22.369608!2d-46.9453788!4m5!1s0x94c857b53a599803%3A0x29f92be0aa58ab95!2sPra%C3%A7a%20Rui%20Barbosa%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013845-180!3m2!1d-22.3718087!2d-46.9423854!5e0!3m2!1sen!2sbr!4v1755546314439!5m2!1sen!2sbr')
+                    falar("marco histórico e ponto central do comércio tradicional da cidade, próximo à igreja matriz")
+                } else if (comando.includes("Campano") || comando.includes("Centro Esportivo") || comando.includes("centro") || comando.includes("esportivo")) {
+                    abrirModalestabelecimento('Centro Esportivo Antonio Campano', 'Centro Esportivo Inclusivo e totalmente público.', 'https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d17550.67050023918!2d-46.948162902338375!3d-22.369709471885567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c857b44614fc3b%3A0xf4487726225aa437!2sCer%C3%A2mica%20Clube%20-%20Rua%20Luiz%20Martini%20-%20Centro%2C%20Mogi%20Gua%C3%A7u%20-%20State%20of%20S%C3%A3o%20Paulo!3m2!1d-22.369608!2d-46.9453788!4m5!1s0x94c856490829a935%3A0x6cffb6b8524e1fd6!2sCentro%20Esportivo%20Antonio%20Campano!3m2!1d-22.3683867!2d-46.9351491!5e0!3m2!1sen!2sbr!4v1755546816964!5m2!1sen!2sbr')
+                    falar("Centro Esportivo Inclusivo e totalmente público")
+                } else if (comando.includes("Fechar Estabelecimento")) {
+                    fecharModalestabelecimento()
+                }
+
+                //==Comandos de Vaga
+                else if (comando.includes("Técnico de Manutenção")) {
+                    abrirModalVaga('Técnico de Manutenção', '3 anos de experiência', 'Mogi Guaçu - SP', 'R$ 2.800,00', 'Executar ajustes e pequenos reparos em sistemas elétricos, hidráulicos, mecânicos e estruturas civis, seguindo procedimentos de segurança e normas técnicas;Realizar inspeções regulares;Garantir a limpeza e organização do ambiente de trabalho;       Realizar teste de funcionamento;')
+                    falar("Executar ajustes e pequenos reparos em sistemas elétricos, hidráulicos, mecânicos e estruturas civis, seguindo procedimentos de segurança e normas técnicas;Realizar inspeções regulares;Garantir a limpeza e organização do ambiente de trabalho; Realizar teste de funcionamento;")
+                } else if (comando.includes("Auxiliar Administrativo")) {
+                    abrirModalVaga('Auxlilar Administrativo', '1,5 anos de experiência', 'Mogi Guaçu - SP', 'R$ 1.780,00', 'O funcionário trabalharará com suporte a produção, expedição e logistica. Efetuar entrega de EPIs e insumos para a parte de caldeiraria.. Emitir romaneio de caminhão, e inpeção de peças. Dar suporte de documentos para a matriz. Vaga para Mogi Guaçu - SP.')
+                    falar(" funcionário trabalharará com suporte a produção, expedição e logistica. Efetuar entrega de EPIs e insumos para a parte de caldeiraria.. Emitir romaneio de caminhão, e inpeção de peças. Dar suporte de documentos para a matriz. Vaga para Mogi Guaçu - SP.")
+                } else if (comando.includes("Auxiliar de Cozinha")) {
+                    abrirModalVaga('Auxiliar de Cozinha', '6 meses de experiência', 'Mogi-Guaçu-SP', 'R$ 2.000,00', 'Atender as solicitações de nossos clientes com excelência, visando a satisfação do atendimento; Recepcionar clientes e direcionar para área responsável pelo atendimento; Atender clientes com intenção de cancelamento e reverter sua intenção;')
+                    falar("Atender as solicitações de nossos clientes com excelência, visando a satisfação do atendimento; Recepcionar clientes e direcionar para área responsável pelo atendimento; Atender clientes com intenção de cancelamento e reverter sua intenção;")
+                } else if (comando.includes("Operador de Caixa")) {
+                    abrirModalVaga('Operador de Caixa', '1 anos de experiência', 'Mogi Guaçu - SP', 'R$ 2.500,00', 'Executar ajustes e pequenos reparos em sistemas elétricos, hidráulicos, mecânicos e estruturas civis, seguindo procedimentos de segurança e normas técnicas; Realizar inspeções regulares; Garantir a limpeza e organização do ambiente de trabalho;          Realizar teste de funcionamento; Cumprir procedimentos de segurança e normas de saúde ocupacional e registrar diariamente as atividades no sistema. Vaga para a região de Mogi Guaçu - SP.')
+                    falar("Executar ajustes e pequenos reparos em sistemas elétricos, hidráulicos, mecânicos e estruturas civis, seguindo procedimentos de segurança e normas técnicas; Realizar inspeções regulares; Garantir a limpeza e organização do ambiente de trabalho; Realizar teste de funcionamento; Cumprir procedimentos de segurança e normas de saúde ocupacional e registrar diariamente as atividades no sistema. Vaga para a região de Mogi Guaçu - SP.")
+                } else if (comando.includes("Cumim")) {
+                    abrirModalVaga('Cumim', 'Não necessário experiência', 'Mogi Guaçu - SP', 'R$ 2.200,00', 'Sobre nós: Estamos procurando um Cumim para apoiar os garçons e manter o salão do restaurante em perfeito estado. Principais responsabilidades: · Preparar e organizar o salão. · Auxiliar na entrega de bebidas e alimentos. · Manter o ambiente limpo e organizado durante o serviço. O que esperamos de você: · Experiência prévia é um diferencial. · Boa comunicação e habilidades organizacionais. O que oferecemos: · Salário competitivo e benefícios. · Ambiente de trabalho acolhedor e colaborativo. Vaga para a cidade de Mogi Guaçu - SP.')
+                    falar("Sobre nós: Estamos procurando um Cumim para apoiar os garçons e manter o salão do restaurante em perfeito estado. Principais responsabilidades: · Preparar e organizar o salão. · Auxiliar na entrega de bebidas e alimentos. · Manter o ambiente limpo e organizado durante o serviço. O que esperamos de você: · Experiência prévia é um diferencial. · Boa comunicação e habilidades organizacionais. O que oferecemos: · Salário competitivo e benefícios. · Ambiente de trabalho acolhedor e colaborativo. Vaga para a cidade de Mogi Guaçu- SP")
+                } else if (comando.includes("Consultor de Vendas")) {
+                    abrirModalVaga('Consultor de Vendas', '2 anos de experiência', 'Mogi Guaçu - SP', 'R$ 2.200,00', 'Realizar vendas de equipamentos de telefonia móvel, acessórios, serviços e planos de telefonia e dados, esclarecendo e orientando o cliente, demonstrando o funcionamento de aparelhos e acessórios quando necessário; recepcionar o cliente e identificar suas necessidades; realizar ligação de ataque à base; solicitar, receber e conferir os documentos do cliente para efetivação da venda; manter a loja organizada; cumprir o padrão de apresentação pessoal; manter-se atualizado no que se refere às informações enviadas via canal do varejo. Vaga para a cidade de Mogi Guaçu - SP.')
+                    falar("Realizar vendas de equipamentos de telefonia móvel, acessórios, serviços e planos de telefonia e dados, esclarecendo e orientando o cliente, demonstrando o funcionamento de aparelhos e acessórios quando necessário; recepcionar o cliente e identificar suas necessidades; realizar ligação de ataque à base; solicitar, receber e conferir os documentos do cliente para efetivação da venda; manter a loja organizada; cumprir o padrão de apresentação pessoal; manter-se atualizado no que se refere às informações enviadas via canal do varejo. Vaga para a cidade de Mogi Guaçu - SP")
+                } else if (comando.includes("Fechar Vaga")) {
+                    fecharModal()
+                }
+
+                //==Comandos Noticias
+                else if (comando.includes("Guaçuana vai disputar")) {
+                    abrirModalNoticia(
+                        'Guaçuana vai disputar o miss Brasil em novembro na cidade de Curitiba',
+                        'https://midias.agazeta.com.br/2025/06/27/a-modelo-capixaba-eduarda-braum-2789943-article.webp',
+                        'Perguntada sobre o futuro, Kimberlly respondeu com firmeza e doçura:“Meu sonho é o Miss Internacional e eu vou dar tudo de mim para realizar esse sonho. Quero mostrar que meninas da minha cidade e do interior também podem conquistar o mundo.”Além da faixa e da coroa, a miss ganhou uma viagem de 5 dias para ela e um acompanhante com tudo pago pela organização a conquista representa a realização de uma promessa divina em sua vida. A família chegou a se preparar para a etapa nacional que aconteceria em julho, mas por dificuldades não puderam participar. A nova oportunidade veio como um presente, e para a mãe da miss, isso mostra que “Deus não falha. Ele cumpre suas promessas no tempo certo.” Kimberlly já é conhecida nas redes sociais, onde acumulava mais de 33 mil seguidores no Instagram onde perdeu sua conta por denúncias agora com seu novo Instagram kim_kidsoficial_ ela compartilha sua rotina como modelo, atriz, apresentadora e influenciadora.'
+                    )
+                    falar('Perguntada sobre o futuro, Kimberlly respondeu com firmeza e doçura:“Meu sonho é o Miss Internacional e eu vou dar tudo de mim para realizar esse sonho. Quero mostrar que meninas da minha cidade e do interior também podem conquistar o mundo.”Além da faixa e da coroa, a miss ganhou uma viagem de 5 dias para ela e um acompanhante com tudo pago pela organização a conquista representa a realização de uma promessa divina em sua vida. A família chegou a se preparar para a etapa nacional que aconteceria em julho, mas por dificuldades não puderam participar. A nova oportunidade veio como um presente, e para a mãe da miss, isso mostra que “Deus não falha. Ele cumpre suas promessas no tempo certo.” Kimberlly já é conhecida nas redes sociais, onde acumulava mais de 33 mil seguidores no Instagram onde perdeu sua conta por denúncias agora com seu novo Instagram kim_kidsoficial_ ela compartilha sua rotina como modelo, atriz, apresentadora e influenciadora.')
+                } else if (comando.includes("Campo do TG")) {
+                    abrirModalNoticia(
+                        'Campo do TG: Área de lazer recebe instalações de guias do estacionamento e demarcação de solo da ciclovia',
+                        'https://hortonews.com.br/images/noticias/2224/ad6db23295ca68c3972e2527540270a3.jpg',
+                        'Após 15 dias da retomada do serviço de renovação da Praça Francisco Marchese, popularmente conhecida como Campo do TG, no Jardim Nossa Senhora das Graças, o BNH, o espaço já recebeu a instalação de guias das ruas do estacionamento e também a demarcação de solo da futura ciclovia da área de lazer. Além disso, também foi retomada a construção dos banheiros do local. O projeto de requalificação do Campo do TG tem gestão da Secretaria de Planejamento e Desenvolvimento Urbano (SPDU) e o trabalho acompanhamento da Secretaria de Obras e Mobilidade (SOM). A obra é executada pela empresa Guassu Construtora Ltda. Pelo projeto, a Praça Francisco Marchese, ganhará bebedouros, campo de futebol, pista de patinação, espaço pet, playground, campo society, quadra de streetball e bicicletário, além da revitalização da academia ao ar livre já existente. A área terá também iluminação 100% LED e novo paisagismo, além de uma ponte sobre o córrego existente no local. O prefeito Rodrigo Falsetti destacou a importância do investimento, porque o espaço é frequentado por centenas de pessoas para a prática esportiva e para o lazer. “Com a nova estrutura será possível oferecer para os moradores um espaço público mais adequado e uma área renovada para o lazer e para a prática esportiva. Logo, logo, teremos mais um excelente espaço em Mogi Guaçu”, disse.'
+                    )
+                    falar('Após 15 dias da retomada do serviço de renovação da Praça Francisco Marchese, popularmente conhecida como Campo do TG, no Jardim Nossa Senhora das Graças, o BNH, o espaço já recebeu a instalação de guias das ruas do estacionamento e também a demarcação de solo da futura ciclovia da área de lazer. Além disso, também foi retomada a construção dos banheiros do local. O projeto de requalificação do Campo do TG tem gestão da Secretaria de Planejamento e Desenvolvimento Urbano (SPDU) e o trabalho acompanhamento da Secretaria de Obras e Mobilidade (SOM). A obra é executada pela empresa Guassu Construtora Ltda. Pelo projeto, a Praça Francisco Marchese, ganhará bebedouros, campo de futebol, pista de patinação, espaço pet, playground, campo society, quadra de streetball e bicicletário, além da revitalização da academia ao ar livre já existente. A área terá também iluminação 100% LED e novo paisagismo, além de uma ponte sobre o córrego existente no local. O prefeito Rodrigo Falsetti destacou a importância do investimento, porque o espaço é frequentado por centenas de pessoas para a prática esportiva e para o lazer. “Com a nova estrutura será possível oferecer para os moradores um espaço público mais adequado e uma área renovada para o lazer e para a prática esportiva. Logo, logo, teremos mais um excelente espaço em Mogi Guaçu”, disse.')
+                } else if (comando.includes("Fechar Notícia")) {
+                    fecharModalNoticia()
+                }
+                else {
+                    falar("Desculpe, não entendi o comando.");
+                }
+            };
+
+            recognition.onerror = (event) => {
+                saida.textContent = "❌ Erro: " + event.error;
+                falar("Ocorreu um erro ao ouvir seu comando.");
+            };
+        } else {
+            alert("Seu navegador não suporta comandos de voz 😢. Use Chrome ou Edge.");
+        }
+    </script>
 
 
 </body>
