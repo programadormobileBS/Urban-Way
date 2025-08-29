@@ -699,7 +699,7 @@
                             </svg>
                         </div>
                         <div class="flex flex-col">
-                            <h2 class="text-[#121417] text-xl font-bold leading-tight">Auxlilar Administrativo</h2>
+                            <h2 class="text-[#121417] text-xl font-bold leading-tight">Auxiliar Administrativo</h2>
                             <p class="text-lg text-gray-800 mt-2">1,5 anos de experiência</p>
                         </div>
                     </div>
@@ -1094,6 +1094,7 @@
     <script>
         function abrirModalestabelecimento(titulo, descricao, urlMapa) {
             const modal = document.getElementById('modalInfo');
+            const caixa = modal.querySelector('div');
             document.getElementById('modalTitulo').innerText = titulo;
             document.getElementById('modalDescricao').innerText = descricao;
             modal.classList.remove('hidden');
