@@ -49,7 +49,16 @@
                         </svg>
                         <span class="sr-only">Ativar microfone</span>
                     </button>
-
+                    <div id="bloco-horario-clima"
+                        class="flex items-center gap-6 bg-[#D3D4DE] text-[#121417] rounded-lg p-4 font-bold text-3xl">
+                        <!-- Horário -->
+                        <span id="hora-atual">--:--</span>
+                        <!-- Clima -->
+                        <div class="flex items-center gap-2">
+                            <img id="icone-clima" src="" class="w-8 h-8" alt="Clima">
+                            <span id="temperatura">--°C</span>
+                        </div>
+                    </div>
                 </div>
             </header>
         </div>
@@ -1090,6 +1099,44 @@
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+    <script>
+        // Atualizar horário
+        function atualizarHora() {
+            const agora = new Date();
+            let horas = agora.getHours().toString().padStart(2, '0');
+            let minutos = agora.getMinutes().toString().padStart(2, '0');
+            document.getElementById("hora-atual").innerText = `${horas}:${minutos}`;
+        }
+        setInterval(atualizarHora, 1000);
+        atualizarHora();
+
+        // Buscar clima real com OpenWeather
+        const apiKey = "c04e75ebcac3eb2f76b33709ac7ee53f"; 
+        const cidade = "Mogi Guaçu,BR"; 
+
+        async function buscarClima() {
+            try {
+                const url = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${apiKey}&units=metric&lang=pt_br`;
+                const resposta = await fetch(url);
+                const dados = await resposta.json();
+
+                const temp = Math.round(dados.main.temp);
+                const icone = dados.weather[0].icon; 
+                const urlIcone = `https://openweathermap.org/img/wn/${icone}.png`;
+
+                document.getElementById("temperatura").innerText = `${temp}°C`;
+                document.getElementById("icone-clima").src = urlIcone;
+
+            } catch (e) {
+                console.error("Erro ao buscar clima:", e);
+            }
+        }
+
+        buscarClima();
+        setInterval(buscarClima, 600000);
     </script>
 
 
